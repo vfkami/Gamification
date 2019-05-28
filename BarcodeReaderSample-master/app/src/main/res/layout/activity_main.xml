@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.varvet.barcodereadersample.MainActivity">
+
+    <Spinner
+        android:id="@+id/spinnerPart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSession"
+        tools:layout_editor_absoluteX="87dp" />
+
+    <TextView
+        android:id="@+id/result_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:autoLink="all"
+        android:freezesText="true"
+        android:gravity="center"
+        android:text="@string/no_barcode_captured"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@id/scan_barcode_button" />
+
+    <Button
+        android:id="@+id/scan_barcode_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result_textview"
+        android:background="@color/colorAccent"
+        android:text="@string/scan_barcode_button"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <Spinner
+        android:id="@+id/spinnerSession"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/scan_barcode_button"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="387dp"
+        android:layout_height="199dp"
+        app:srcCompat="@drawable/inf"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="80dp" />
+
+</android.support.constraint.ConstraintLayout>

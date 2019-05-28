@@ -1,0 +1,30 @@
+  
+  #countdown {
+    
+    position: absolute;
+    bottom: 185px;
+    left: 50px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+  }
+  
+  
+  svg circle {
+    stroke-dasharray: 113px;
+    stroke-dashoffset: 0px;
+    stroke-linecap: round;
+    stroke-width: 2px;
+    stroke: rgb(105, 197, 258);
+    fill: none;
+    animation: countdown 60s linear infinite forwards;
+  }
+  
+  @keyframes countdown {
+    from {
+      stroke-dashoffset: 0px;
+    }
+    to {
+      stroke-dashoffset: 113px;
+    }
+  }

@@ -1,0 +1,22 @@
+Plátanos
+8:30,10:00,Keynote 3 Timothy,…
+10:30,12:00,Sessão Técnica 19 ,???
+14:00,16:00,Sessão Técnica 22,???
+16:30,17:15,Keynote Walter,???
+17:15,18:30,Painel 3,…
+
+Hortência
+10:30,12:00, ???,???
+14:00,16:00, ??,???
+
+Bromélia
+10:30,12:00,CTD - Doutorado,???
+14:00,16:00,CTD - Doutorado,???
+
+Lírio
+10:30,12:00,Sessão Técnica 20,???
+14:00,16:00, Sessão Técnica 23,???
+
+Orquídea
+10:30,12:00,Sessão Técnica 21,???
+14:00,16:00, Sessão Técnica 24,???
