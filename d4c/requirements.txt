@@ -1,0 +1,5 @@
+requests
+mysql-connector
+Flask
+pickle5
+gunicorn
