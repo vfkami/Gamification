@@ -10,7 +10,7 @@ CREATE TABLE `EventLogs` (
 );
 
 
-(%(Name)s, %(Institution)s, %(state)s, %(session)s, %(participation)s, %(lastScore)i, %(updated_at)s)
+/*(%(Name)s, %(Institution)s, %(state)s, %(session)s, %(participation)s, %(lastScore)i, %(updated_at)s);*/
 
 CREATE TABLE `EventLogs` 
 {
@@ -21,5 +21,5 @@ CREATE TABLE `EventLogs`
 	'participation' : ,
 	'lastScore' : ,
 	'updated_at' :
-}
-);
+};
+

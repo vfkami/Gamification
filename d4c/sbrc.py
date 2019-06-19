@@ -7,12 +7,6 @@
 #
 
 
-
-
-
-
-
-
 from flask import Flask
 from flask import request, url_for, redirect, send_from_directory,make_response,render_template
 from flask import jsonify
@@ -67,13 +61,15 @@ import traceback
 try:
     import mysql.connector
     db = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    passwd="reverse",
-    database='SBRC',
-    charset='utf8'
+    host="45.55.64.56",
+    user="d63551eebd92 ",
+    passwd="ac3b4f15720d4083",
+    database='csbc-gamification'
     )
+	
+    print(db)
 
+	
     cursor = db.cursor()
 
     checkRepeatedTemplate='''SELECT Name FROM EventLogs WHERE Name = %s AND session = %s AND participation = "Join"'''
@@ -106,6 +102,7 @@ try:
 
 
     cursor.execute(fetchNameTemplate)
+	
     for res in cursor:
         ranking.scores[res[0]+' ('+res[1]+')']=int(res[2])
 
@@ -123,6 +120,7 @@ try:
 
 
     sql=True
+
 except:
     traceback.print_exc(file=sys.stdout)
     sql=False
@@ -131,6 +129,7 @@ except:
 
 
 @app.route('/qr/<string>/<sess>/<activity>')
+
 def qr(string,sess,activity):
     if(sql):
         global cursor
@@ -177,13 +176,9 @@ def qr(string,sess,activity):
     return('0')
 
 
-
-
 class FromFile:
     translate="-50%,-15%"
     title="<b>Leaderboard SBRC 2019</b>"
-
-
 
 
 @app.route('/apple-touch-icon.png')
@@ -551,13 +546,14 @@ def showsched6():
 
 @app.route('/sessions')
 def sessions():
-    return "a,b,c,d,e,f,g,h"
+    return "a,b,c,d,e,aaa,aaaa,aaaa"
 
 @app.route('/patrocinio')
 def showpatrocinio():
     return render_template('patrocinio.html')
 
+
 #app.run(host='0.0.0.0',port=80, threaded=True)
 #requests.get('10.0.0.1')
 if __name__ == "__main__":
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0', port=80)

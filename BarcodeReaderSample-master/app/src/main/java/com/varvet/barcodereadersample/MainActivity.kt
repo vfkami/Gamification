@@ -27,12 +27,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun sendGet(name_inst:String) {
 
-        val uri = URI("https", "sbrc.d4c.wtf", "/qr/$name_inst/$sess/$part", null)
+        //val uri = URI("https", "sbrc.d4c.wtf", "/qr/$name_inst/$sess/$part", null)
+        val uri = URI("http", "192.168.1.117", "/qr/$name_inst/$sess/$part", null)
+
         val template = uri.toString()
-
-
-
-
 
         val connection = URL(template).openConnection() as HttpURLConnection
         try {
@@ -60,10 +58,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         optionPart=findViewById<Spinner>(R.id.spinnerPart)
         optionSession=findViewById<Spinner>(R.id.spinnerSession)
-
-
-
-
 
         Thread{
 
@@ -98,9 +92,6 @@ class MainActivity : AppCompatActivity() {
                 part= optionsPart.get(position)
             }
         }
-
-
-
 
         mResultTextView = findViewById(R.id.result_textview)
 
