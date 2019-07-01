@@ -3,6 +3,7 @@
 
 package com.varvet.barcodereadersample
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
@@ -13,6 +14,7 @@ import com.google.android.gms.vision.barcode.Barcode
 import com.varvet.barcodereadersample.barcode.BarcodeCaptureActivity
 import java.io.InputStream
 import java.lang.Exception
+import java.lang.Object
 import java.net.*
 
 object Vlad{
@@ -26,19 +28,17 @@ class MainActivity : AppCompatActivity() {
     var sess:String="ST00"
 
     private fun sendGet(name_inst:String) {
-
-        //val uri = URI("https", "sbrc.d4c.wtf", "/qr/$name_inst/$sess/$part", null)
-        val uri = URI("http", "192.168.1.117", "/qr/$name_inst/$sess/$part", null)
+//        val uri = URI("https", "sbrc.d4c.wtf", "/qr/$name_inst/$sess/$part", null) //<- anterior
+        val uri = URI("http", null,"gercom.ddns.net", 8082, "/qr/$name_inst/$sess/$part", null, null)
 
         val template = uri.toString()
-
         val connection = URL(template).openConnection() as HttpURLConnection
+
         try {
-
             val data = connection.inputStream.bufferedReader().readText()
-
             System.out.println(data)
         }
+
         catch(e:Exception){
             System.out.println(template)
             System.out.println("AAA")
@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
 
         Thread{
 
-            val sessions=URL("http://sbrc.inf.ufrgs.br/sessions").readText().split(",")
+            val sessions=URL("http://gercom.ddns.net:8082/sessions").readText().split(",")
             Vlad.optionsSession = sessions
 
         }.start()
@@ -92,7 +92,6 @@ class MainActivity : AppCompatActivity() {
                 part= optionsPart.get(position)
             }
         }
-
         mResultTextView = findViewById(R.id.result_textview)
 
         findViewById<Button>(R.id.scan_barcode_button).setOnClickListener {

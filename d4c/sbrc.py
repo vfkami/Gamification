@@ -546,8 +546,18 @@ def showsched6():
 
 @app.route('/sessions')
 def sessions():
-    return "a,b,c,d,e,aaa,aaaa,aaaa"
 
+	domingo = "CQEB(9-12),CQEB(9-12),CQEB(14-16),CQEB(14-16),CQEB(16:30-19),CQEB(16:30-19)"
+	#segunda = "JAI #1(9-12),JAI #1(16-19),WEI(9-12),WEI(16-19),CTD(9-12),CTD(16-19),WIT(9-12),WIT(16-19),SEMISH(9-12),SEMISH(16-19),SEMISH-hackaton(9-12),SEMISH-hackaton(16-19),WPerformance(9-12),WPerformance(16-19),WTranS(9-12),WTranS(16-19),ETC(9-12),ETC(16-19),CLOUDSCAPE-Brazil(9-12),CLOUDSCAPE-Brazil(16-19),ForumPG(9-12),ForumPG(16-19),SECOMU" 
+	#terca = "JAI #2(9-12),JAI #2_(16-19),WEI(9-12),WEI(16-19),CTD(9-12),CTIC(16-19),WIT(9-12),WIT(16-19),SEMISH(9-12),SEMISH(16-19),SEMISH-hackaton(9-12),SEMISH-hackaton(16-19),SBCUP(9-12),SBCUP(16-19),WPerformance(9-12),WPerformance(16-19),ETC(9-12),ETC(16-19),WORKSHOP-OnCloundNetworks(9-12),ReuniãoCEs(9-12),Reunião CNPQ/CAPES(16-19),SECOMU" 
+	#quarta ="JAI #3(9-12),JAI #3_(16-19),WEI(9-12),WEI(16-19),BraSNAM(9-12),BraSNAM(16-19),BreSci(9-12),BreSci(16-19),Reunião SR SBC(9-12),IFIP/SBC(16-19),SBCUP(9-12),SBCUP(16-19),WCAMA(9-12),WCAMA(16-19),WPIETF hackathon(9-12),WPIETF hackathon(16-19),WPIETF(9-12),WPIETF(16-19),COMPUTEC(9-12),COMPUTEC(16-19),Apres. e Prem. do Selo de Inovacao da SBC,SECOMU"
+	#quinta ="JAI #4(9-12),JAI #4(16-19),WEI(9-12),WCAMA(16-19),BraSNAM(9-12),BraSNAM(16-19),BreSci(9-12),BreSci(16-19),SBCUP(9-12),SBCUP(16-19),ENCompIP(9-12),ENCompIP(16-19),WFIBRE(9-12),WFIBRE(16-19),WPIETF(9-12),WPIETF(16-19),WASHES(9-12),WASHES(16-19),COMPUTEC(9-12),COMPUTEC(16-19),SECOMU"
+	
+	session = domingo;
+	
+	return sessions
+	
+	
 @app.route('/patrocinio')
 def showpatrocinio():
     return render_template('patrocinio.html')
