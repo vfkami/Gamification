@@ -30,19 +30,16 @@
       <change beforePath="$PROJECT_DIR$/../BarcodeReaderSample-master/.idea/libraries/Gradle__com_google_android_gms_play_services_tasks_11_8_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BarcodeReaderSample-master/.idea/libraries/Gradle__com_google_android_gms_play_services_tasks_11_8_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BarcodeReaderSample-master/.idea/libraries/Gradle__com_google_android_gms_play_services_vision_11_8_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BarcodeReaderSample-master/.idea/libraries/Gradle__com_google_android_gms_play_services_vision_11_8_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BarcodeReaderSample-master/.idea/libraries/Gradle__com_google_android_gms_play_services_vision_common_11_8_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BarcodeReaderSample-master/.idea/libraries/Gradle__com_google_android_gms_play_services_vision_common_11_8_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BarcodeReaderSample-master/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_3_0_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../BarcodeReaderSample-master/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BarcodeReaderSample-master/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BarcodeReaderSample-master/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BarcodeReaderSample-master/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BarcodeReaderSample-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BarcodeReaderSample-master/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BarcodeReaderSample-master/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../BarcodeReaderSample-master/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BarcodeReaderSample-master/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../BarcodeReaderSample-master/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BarcodeReaderSample-master/app/src/main/java/com/varvet/barcodereadersample/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../BarcodeReaderSample-master/app/src/main/java/com/varvet/barcodereadersample/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BarcodeReaderSample-master/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../BarcodeReaderSample-master/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BarcodeReaderSample-master/build/android-profile/profile-2019-03-05-07-43-34-193.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BarcodeReaderSample-master/build/android-profile/profile-2019-03-05-07-43-34-193.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BarcodeReaderSample-master/build/android-profile/profile-2019-03-05-07-45-49-062.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BarcodeReaderSample-master/build/android-profile/profile-2019-03-05-07-45-49-062.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BarcodeReaderSample-master/build/kotlin-build/caches/version.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BarcodeReaderSample-master/build/kotlin-build/version.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../BarcodeReaderSample-master/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../BarcodeReaderSample-master/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sbrc.py" beforeDir="false" afterPath="$PROJECT_DIR$/sbrc.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sbrc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+            <state relative-caret-position="799">
+              <caret line="239" column="6" lean-forward="true" selection-start-line="239" selection-start-column="6" selection-end-line="239" selection-end-column="6" />
               <folding>
                 <element signature="e#125#148#0" expanded="true" />
               </folding>
@@ -71,6 +68,17 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ranking</find>
+      <find>Now()</find>
+      <find>insertLogTemplate</find>
+      <find>checkRepeatedTemplate</find>
+      <find>qrshow/1</find>
+      <find>:5]</find>
+      <find>/qrshow/1</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -93,10 +101,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2017" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -104,7 +112,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -116,6 +123,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -136,7 +144,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="d4c" type="Python.FlaskServer">
+    <configuration name="d4c" type="Python.FlaskServer" factoryName="Flask server">
       <module name="d4c" />
       <option name="target" value="$PROJECT_DIR$/sbrc.py" />
       <option name="targetType" value="PATH" />
@@ -165,16 +173,19 @@
       <workItem from="1559071638496" duration="727000" />
       <workItem from="1559072602090" duration="3074000" />
       <workItem from="1559141113224" duration="600000" />
+      <workItem from="1562338162897" duration="135000" />
+      <workItem from="1562338441302" duration="4004000" />
+      <workItem from="1562345279397" duration="11117000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4401000" />
+    <option name="totallyTimeSpent" value="19657000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16641453" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17110874" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -209,8 +220,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sbrc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        <state relative-caret-position="799">
+          <caret line="239" column="6" lean-forward="true" selection-start-line="239" selection-start-column="6" selection-end-line="239" selection-end-column="6" />
           <folding>
             <element signature="e#125#148#0" expanded="true" />
           </folding>

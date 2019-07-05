@@ -2,9 +2,12 @@
 //lbcastanheira@inf.ufrgs.br
 
 package com.varvet.barcodereadersample
+import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.os.Handler
+import android.os.Message
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.View
@@ -16,6 +19,9 @@ import java.io.InputStream
 import java.lang.Exception
 import java.lang.Object
 import java.net.*
+import android.widget.Toast
+
+
 
 object Vlad{
 
@@ -27,6 +33,10 @@ class MainActivity : AppCompatActivity() {
     var part:String="Join"
     var sess:String="ST00"
 
+    fun showToast(toast: String) {
+        runOnUiThread { Toast.makeText(this@MainActivity, toast, Toast.LENGTH_SHORT).show() }
+    }
+
     private fun sendGet(name_inst:String) {
 //        val uri = URI("https", "sbrc.d4c.wtf", "/qr/$name_inst/$sess/$part", null) //<- anterior
         val uri = URI("http", null,"gercom.ddns.net", 8082, "/qr/$name_inst/$sess/$part", null, null)
@@ -37,9 +47,14 @@ class MainActivity : AppCompatActivity() {
         try {
             val data = connection.inputStream.bufferedReader().readText()
             System.out.println(data)
+            println("Foi")
+            if (data > "0"){
+                println("Era pra ter ido")
+                showToast(toast = "Você fez um check-in recente. Por favor, espere "+ (30-data.toInt()) +" minutos.")
+            }
         }
-
         catch(e:Exception){
+            println("Não foi")
             System.out.println(template)
             System.out.println("AAA")
         }
@@ -47,6 +62,10 @@ class MainActivity : AppCompatActivity() {
             connection.disconnect()
         }
 
+    }
+
+    fun Context.toast(context: Context = applicationContext, message: String, toastDuration: Int = Toast.LENGTH_SHORT) {
+        Toast.makeText(context, message, toastDuration).show()
     }
     lateinit var optionSession: Spinner
     lateinit var optionPart: Spinner
