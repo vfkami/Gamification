@@ -130,7 +130,7 @@ except:
 
 @app.route('/qr/<string>/<sess>/<activity>')
 
-def qr(string,sess,actiolocomeuolocomeuvity):
+def qr(string,sess,activity):
     if(sql):
         global cursor
         global db
