@@ -130,7 +130,7 @@ except:
 
 @app.route('/qr/<string>/<sess>/<activity>')
 
-def qr(string,sess,activity):
+def qr(string,sess,actiolocomeuolocomeuvity):
     if(sql):
         global cursor
         global db
@@ -221,11 +221,11 @@ var Dash = {
     nextIndex: 1,
     //Don't put too many items in this list
     dashboards: [
-       {url: "http://localhost/qrshow/1", time: 60, refresh: true},
-       {url: "http://localhost/qrshow/2", time: 60, refresh: true},
-       {url: "http://localhost/qrshow/3", time: 60, refresh: true},
-       {url: "http://localhost/patrocinio", time: 60, refresh: false},
-       {url: "http://localhost/segunda", time: 60, refresh: true}
+       {url: "http://gercom.ddns.net:8082/qrshow/1", time: 60, refresh: true},
+       {url: "http://gercom.ddns.net:8082/qrshow/2", time: 60, refresh: true},
+       {url: "http://gercom.ddns.net:8082/qrshow/3", time: 60, refresh: true},
+       {url: "http://gercom.ddns.net:8082/patrocinio", time: 60, refresh: false},
+       {url: "http://gercom.ddns.net:8082/segunda", time: 60, refresh: true}
        
     ],
     startup: function () {
