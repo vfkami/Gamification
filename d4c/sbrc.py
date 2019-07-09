@@ -146,7 +146,6 @@ def qr(string,sess,activity):
         cursor.execute(checkRepeatedTemplate,(csv[0],))
         result = cursor.fetchall()
         if(cursor.rowcount>0):
-            print(result)
             if (result[len(result)-1][0]==csv[0] and result[len(result)-1][1]==csv[1] and result[len(result)-1][2]==csv[2]):
                 date_time_obj = datetime.datetime.strptime(result[len(result)-1][7], '%Y-%m-%d %H:%M:%S.%f')
                 timesince = datetime.datetime.now() - date_time_obj
