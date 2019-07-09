@@ -85,7 +85,7 @@ try:
 
     fetchInstitutionTemplate= ''' SELECT INSTITUICOES.SIGLA,SUM(points)
  FROM EventLogs
- LEFT OUTER JOIN INSTITUICOES ON INSTITUICOES.NomeCompleto=EventLogs.Instituition
+ LEFT OUTER JOIN INSTITUICOES ON INSTITUICOES.NomeCompleto=EventLogs.Institution
  GROUP BY INSTITUICOES.Sigla
  ORDER BY SUM(points) DESC'''
 
