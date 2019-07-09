@@ -89,7 +89,7 @@ try:
  GROUP BY INSTITUICOES.Sigla
  ORDER BY SUM(points) DESC'''
 
-    fetchNameTemplate= ''' SELECT Name,Institution,SUM(points)
+    fetchNameTemplate= ''' SELECT Name,state,SUM(points)
  FROM EventLogs
  GROUP BY Name
  ORDER BY SUM(points) DESC'''
