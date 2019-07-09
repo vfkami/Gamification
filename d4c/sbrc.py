@@ -83,10 +83,10 @@ try:
  ORDER BY SUM(points) DESC'''
 
 
-
-    fetchInstitutionTemplate= ''' SELECT Institution,SUM(points)
+    fetchInstitutionTemplate= ''' SELECT INSTITUICOES.SIGLA,SUM(points)
  FROM EventLogs
- GROUP BY Institution
+ LEFT OUTER JOIN INSTITUICOES ON INSTITUICOES.NomeCompleto=EventLogs.Instituition
+ GROUP BY INSTITUICOES.Sigla
  ORDER BY SUM(points) DESC'''
 
     fetchNameTemplate= ''' SELECT Name,Institution,SUM(points)
@@ -295,7 +295,7 @@ def favicon():
     return('322')
 @app.route('/qrshow/1')
 def qrshow1():
-    stringedScores=''.join(['<li><mark>'+str(k)+'</mark>'+'<small>'+str(v)+'</small></li>' for k,v in sorted(ranking.scores.items(), key=operator.itemgetter(1), reverse=True)[0:10]])
+    stringedScores=''.join(['<li><mark>'+str(k)+'</mark>'+'<small>'+str(v)+'</small></li>' for k,v in sorted(ranking.scores.items(), key=operator.itemgetter(1), reverse=True)[0:15]])
     
     string='''
         <html><head>
@@ -438,7 +438,7 @@ def qrshow1():
 
 @app.route('/qrshow/2')
 def qrshow2():
-    univScores=''.join(['<li><mark>'+str(k)+'</mark>'+'<small>'+str(v)+'</small></li>' for k,v in sorted(ranking.univScores.items(), key=operator.itemgetter(1), reverse=True)[0:10]])
+    univScores=''.join(['<li><mark>'+str(k)+'</mark>'+'<small>'+str(v)+'</small></li>' for k,v in sorted(ranking.univScores.items(), key=operator.itemgetter(1), reverse=True)[0:15]])
     
     string='''
         <html><head>
@@ -582,7 +582,7 @@ def qrshow2():
 
 @app.route('/qrshow/3')
 def qrshow3():
-    sessScores=''.join(['<li><mark>'+str(k)+'</mark>'+'<small>'+str(v)+'</small></li>' for k,v in sorted(ranking.sessScores.items(), key=operator.itemgetter(1), reverse=True)[0:10]])
+    sessScores=''.join(['<li><mark>'+str(k)+'</mark>'+'<small>'+str(v)+'</small></li>' for k,v in sorted(ranking.sessScores.items(), key=operator.itemgetter(1), reverse=True)[0:15]])
     
     string='''
         <html><head>
@@ -712,7 +712,7 @@ def qrshow3():
 			</div>
 			<div id="box"> 
 				<div id="numero"><p>Nº</p> </div>
-    			<div id="nome"> <p>NOME</p> </div>
+    			<div id="nome"> <p>SESSÃO</p> </div>
     			<div id="pts"> <p>PONTUAÇÃO</p> </div>
   			</div>
 			<div class="leaderboard">
@@ -726,7 +726,7 @@ def qrshow3():
 
 @app.route('/qrshow/4')
 def qrshow4():
-    stateScores=''.join(['<li><mark>'+str(k)+'</mark>'+'<small>'+str(v)+'</small></li>' for k,v in sorted(ranking.stateScores.items(), key=operator.itemgetter(1), reverse=True)[0:10]])
+    stateScores=''.join(['<li><mark>'+str(k)+'</mark>'+'<small>'+str(v)+'</small></li>' for k,v in sorted(ranking.stateScores.items(), key=operator.itemgetter(1), reverse=True)[0:15]])
     
     string='''
         <html><head>
@@ -856,7 +856,7 @@ def qrshow4():
 			</div>
 			<div id="box"> 
 				<div id="numero"><p>Nº</p> </div>
-    			<div id="nome"> <p>NOME</p> </div>
+    			<div id="nome"> <p>ESTADO</p> </div>
     			<div id="pts"> <p>PONTUAÇÃO</p> </div>
   			</div>
 			<div class="leaderboard">
