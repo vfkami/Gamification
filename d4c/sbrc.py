@@ -666,7 +666,7 @@ def qrshow2():
 			</div>
 			<div id="box"> 
 				<div id="numero"><p>Nº</p> </div>
-    			<div id="nome"> <p>NOME</p> </div>
+    			<div id="nome"> <p>INSTITUIÇÃO</p> </div>
     			<div id="pts"> <p>PONTUAÇÃO</p> </div>
   			</div>
 			<div class="leaderboard">
