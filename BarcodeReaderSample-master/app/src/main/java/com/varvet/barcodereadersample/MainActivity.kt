@@ -41,32 +41,32 @@ class MainActivity : AppCompatActivity() {
 //        val uri = URI("https", "sbrc.d4c.wtf", "/qr/$name_inst/$sess/$part", null) //<- anterior
         val uri = URI("http", null,"gercom.ddns.net", 8082, "/qr/$name_inst/$sess/$part", null, null)
 
+        println("Era pra ter ido")
         val template = uri.toString()
         val connection = URL(template).openConnection() as HttpURLConnection
 
         try {
             val data = connection.inputStream.bufferedReader().readText()
             System.out.println(data)
-            println("Foi")
-            if (data > "0"){
-                println("Era pra ter ido")
-                showToast(toast = "Você fez um check-in recente. Por favor, espere "+ (30-data.toInt()) +" minutos.")
+            if (data.split(';')[0].toInt() == 0){
+                showToast(toast = "Você fez um check-in recente. Por favor, espere "+ (30-data.split(';')[1].toInt()) +" minutos.")
+            }else if (data.split(';')[0].toInt() == 1){
+                showToast(toast = "Check-in realizado com sucesso")
             }
+            println("Foi")
         }
         catch(e:Exception){
-            println("Não foi")
-            System.out.println(template)
+            println("Erro")
+            System.out.println(e)
             System.out.println("AAA")
         }
         finally {
+            println("Desconectado")
             connection.disconnect()
         }
 
     }
 
-    fun Context.toast(context: Context = applicationContext, message: String, toastDuration: Int = Toast.LENGTH_SHORT) {
-        Toast.makeText(context, message, toastDuration).show()
-    }
     lateinit var optionSession: Spinner
     lateinit var optionPart: Spinner
 

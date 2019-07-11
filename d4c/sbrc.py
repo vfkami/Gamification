@@ -19,7 +19,6 @@ import time
 import datetime
 import pickle
 import urllib.parse as ul
-import re
 import subprocess
 class Ranking:
     scores={}
@@ -42,7 +41,7 @@ import operator
 
 class Ranking:
     scores={}
-    value={'Join':1,'Question':1}
+    value={'Join':1,'Question':2}
     outs={}
     univScores={}
     sessScores={}
@@ -58,6 +57,65 @@ import operator
 import sys
 import traceback
 
+def verificadorSigla(sigla):
+    if sigla == 'AC':
+        return 'ACRE'
+    elif sigla == 'AL':
+        return 'ALAGOAS'
+    elif sigla == 'AM':
+        return 'AMAZONAS'
+    elif sigla == 'AP':
+        return 'AMAPÁ'
+    elif sigla == 'BA':
+        return 'BAHIA'
+    elif sigla == 'CE':
+        return 'CEARÁ'
+    elif sigla == 'DF':
+        return 'DISTRITO FEDERAL'
+    elif sigla == 'ES':
+        return 'ESPIRITO SANTO'
+    elif sigla == 'GO':
+        return 'GOIAS'
+    elif sigla == 'MA':
+        return 'MARANHÃO'
+    elif sigla == 'MG':
+        return 'MINAS GERAIS'
+    elif sigla == 'MS':
+        return 'MATO GROSSO DO SUL'
+    elif sigla == 'MT':
+        return 'MATO GROSSO'
+    elif sigla == 'PA':
+        return 'PARÁ'
+    elif sigla == 'PB':
+        return 'PARAÍBA'
+    elif sigla == 'PE':
+        return 'PERNAMBUCO'
+    elif sigla == 'PI':
+        return 'PIAUÍ'
+    elif sigla == 'PR':
+        return 'PARANÁ'
+    elif sigla == 'RJ':
+        return 'RIO DE JANEIRO'
+    elif sigla == 'RN':
+        return 'RIO GRANDE DO NORTE'
+    elif sigla == 'RO':
+        return 'RONDÔNIA'
+    elif sigla == 'RR':
+        return 'RORAIMA'
+    elif sigla == 'RS':
+        return 'RIO GRANDE DO SUL'
+    elif sigla == 'SC':
+        return 'SANTA CATARINA'
+    elif sigla == 'SE':
+        return 'SERGIPE'
+    elif sigla == 'SP':
+        return 'SÃO PAULO'
+    elif sigla == 'TO':
+        return 'TOCANTINS'
+    else:
+        return 'EXTERIOR'
+
+
 try:
     import mysql.connector
     db = mysql.connector.connect(
@@ -72,7 +130,7 @@ try:
 	
     cursor = db.cursor()
 
-    checkRepeatedTemplate='''SELECT * FROM EventLogs WHERE Name=%s AND participation = "Join"'''
+    checkRepeatedTemplate='''SELECT * FROM EventLogs WHERE Name=%s AND (participation = "Join" OR participation = "Question")'''
 
     insertLogTemplate = '''INSERT INTO EventLogs 
               (Name,Institution,state,session,participation,points,lastScore,updated_at)
@@ -112,12 +170,11 @@ try:
 
     cursor.execute(fetchStateTemplate)
     for res in cursor:
-        ranking.stateScores[res[0]]=int(res[1])
+        ranking.stateScores[verificadorSigla(res[0])]=int(res[1])
     
     cursor.execute(fetchSessTemplate)
     for res in cursor:
         ranking.sessScores[res[0]]=int(res[1])
-
 
     sql=True
 
@@ -126,10 +183,7 @@ except:
     sql=False
     print('no mysql connector')
 
-
-
 @app.route('/qr/<string>/<sess>/<activity>')
-
 def qr(string,sess,activity):
     if(sql):
         global cursor
@@ -138,10 +192,10 @@ def qr(string,sess,activity):
     csv=string.split(',')
     inst=csv[1]
     id=csv[0]+' ('+inst+')'
-    state=csv[2]
+    state=verificadorSigla(csv[2])
     #if opt out or out then rewrite optout else score
-    
-    
+
+    pointsDB = ranking.value[activity]
     if(activity=="Join"):
         cursor.execute(checkRepeatedTemplate,(csv[0],))
         result = cursor.fetchall()
@@ -150,16 +204,25 @@ def qr(string,sess,activity):
                 date_time_obj = datetime.datetime.strptime(result[len(result)-1][7], '%Y-%m-%d %H:%M:%S.%f')
                 timesince = datetime.datetime.now() - date_time_obj
                 minutessince = int(timesince.total_seconds() / 60)
-                print(minutessince)
-                if (minutessince < 30):
-                    return(str(minutessince))
+                pointsDB = int(result[len(result)-1][6])+1
+                if (minutessince < 3):
+                    return("0;"+str(minutessince))
             # cursor.execute(insertLogTemplate, (csv[0],csv[1],csv[2],sess,0,0,0,0))
             # db.commit()
             # return('0')
         else:
             ranking.sessScores[sess] = ranking.sessScores.get(sess,0) + 1
+    elif(activity=="Question"):
+        cursor.execute(checkRepeatedTemplate, (csv[0],))
+        result = cursor.fetchall()
+        if (cursor.rowcount > 0):
+                pointsDB = int(result[len(result) - 1][6]) + 2
+            # cursor.execute(insertLogTemplate, (csv[0],csv[1],csv[2],sess,0,0,0,0))
+            # db.commit()
+            # return('0')
+        else:
+            ranking.sessScores[sess] = ranking.sessScores.get(sess, 0) + 2
 
-    
     if(activity != 'Optout' and id not in ranking.outs):
         #get points for the activity being logged
         activityScore=ranking.value[activity]
@@ -176,10 +239,10 @@ def qr(string,sess,activity):
 
 
     if(sql):
-        cursor.execute(insertLogTemplate,(csv[0],csv[1],csv[2],sess,activity,activityScore,points,datetime.datetime.now()))
+        cursor.execute(insertLogTemplate,(csv[0],csv[1],csv[2],sess,activity,activityScore,pointsDB,datetime.datetime.now()))
         db.commit()
 
-    return('0')
+    return('1;0')
 
 
 class FromFile:
