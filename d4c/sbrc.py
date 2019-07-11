@@ -205,7 +205,7 @@ def qr(string,sess,activity):
                 timesince = datetime.datetime.now() - date_time_obj
                 minutessince = int(timesince.total_seconds() / 60)
                 pointsDB = int(result[len(result)-1][6])+1
-                if (minutessince < 3):
+                if (minutessince < 30):
                     return("0;"+str(minutessince))
             # cursor.execute(insertLogTemplate, (csv[0],csv[1],csv[2],sess,0,0,0,0))
             # db.commit()
