@@ -959,7 +959,7 @@ def sessions():
 	#quarta ="JAI #3(9-12),JAI #3_(16-19),WEI(9-12),WEI(16-19),BraSNAM(9-12),BraSNAM(16-19),BreSci(9-12),BreSci(16-19),Reunião SR SBC(9-12),IFIP/SBC(16-19),SBCUP(9-12),SBCUP(16-19),WCAMA(9-12),WCAMA(16-19),WPIETF hackathon(9-12),WPIETF hackathon(16-19),WPIETF(9-12),WPIETF(16-19),COMPUTEC(9-12),COMPUTEC(16-19),Apres. e Prem. do Selo de Inovacao da SBC,SECOMU"
 	#quinta ="JAI #4(9-12),JAI #4(16-19),WEI(9-12),WCAMA(16-19),BraSNAM(9-12),BraSNAM(16-19),BreSci(9-12),BreSci(16-19),SBCUP(9-12),SBCUP(16-19),ENCompIP(9-12),ENCompIP(16-19),WFIBRE(9-12),WFIBRE(16-19),WPIETF(9-12),WPIETF(16-19),WASHES(9-12),WASHES(16-19),COMPUTEC(9-12),COMPUTEC(16-19),SECOMU"	
 	session = domingo
-	return "CQEB(9-12),CQEB(9-12),CQEB(14-16),CQEB(14-16),CQEB(16:30-19),CQEB(16:30-19)"
+	return "CQEB(9-12),CQEB(9-12),CQEB(14-16),CQEB(14-16),CQEB(16:30-19),CQEB(16:30-19),teste"
 	   
 @app.route('/patrocinio')
 def showpatrocinio():
