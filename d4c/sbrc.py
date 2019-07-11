@@ -357,6 +357,24 @@ def favicon():
     return('322')
 @app.route('/qrshow/1')
 def qrshow1():
+    cursor.execute(fetchNameTemplate)
+
+    for res in cursor:
+        ranking.scores[res[0] + ' (' + res[1] + ')'] = int(res[2])
+
+    cursor.execute(fetchInstitutionTemplate)
+    for res in cursor:
+        ranking.univScores[res[0]] = int(res[1])
+
+    cursor.execute(fetchStateTemplate)
+    for res in cursor:
+        ranking.stateScores[verificadorSigla(res[0])] = int(res[1])
+
+    cursor.execute(fetchSessTemplate)
+    for res in cursor:
+        ranking.sessScores[res[0]] = int(res[1])
+
+
     stringedScores=''.join(['<li><mark>'+str(k)+'</mark>'+'<small>'+str(v)+'</small></li>' for k,v in sorted(ranking.scores.items(), key=operator.itemgetter(1), reverse=True)[0:15]])
     
     string='''
@@ -500,6 +518,24 @@ def qrshow1():
 
 @app.route('/qrshow/2')
 def qrshow2():
+    cursor.execute(fetchNameTemplate)
+
+    for res in cursor:
+        ranking.scores[res[0] + ' (' + res[1] + ')'] = int(res[2])
+
+    cursor.execute(fetchInstitutionTemplate)
+    for res in cursor:
+        ranking.univScores[res[0]] = int(res[1])
+
+    cursor.execute(fetchStateTemplate)
+    for res in cursor:
+        ranking.stateScores[verificadorSigla(res[0])] = int(res[1])
+
+    cursor.execute(fetchSessTemplate)
+    for res in cursor:
+        ranking.sessScores[res[0]] = int(res[1])
+
+
     univScores=''.join(['<li><mark>'+str(k)+'</mark>'+'<small>'+str(v)+'</small></li>' for k,v in sorted(ranking.univScores.items(), key=operator.itemgetter(1), reverse=True)[0:15]])
     
     string='''
@@ -644,6 +680,24 @@ def qrshow2():
 
 @app.route('/qrshow/3')
 def qrshow3():
+    cursor.execute(fetchNameTemplate)
+
+    for res in cursor:
+        ranking.scores[res[0] + ' (' + res[1] + ')'] = int(res[2])
+
+    cursor.execute(fetchInstitutionTemplate)
+    for res in cursor:
+        ranking.univScores[res[0]] = int(res[1])
+
+    cursor.execute(fetchStateTemplate)
+    for res in cursor:
+        ranking.stateScores[verificadorSigla(res[0])] = int(res[1])
+
+    cursor.execute(fetchSessTemplate)
+    for res in cursor:
+        ranking.sessScores[res[0]] = int(res[1])
+
+
     sessScores=''.join(['<li><mark>'+str(k)+'</mark>'+'<small>'+str(v)+'</small></li>' for k,v in sorted(ranking.sessScores.items(), key=operator.itemgetter(1), reverse=True)[0:15]])
     
     string='''
@@ -788,6 +842,24 @@ def qrshow3():
 
 @app.route('/qrshow/4')
 def qrshow4():
+    cursor.execute(fetchNameTemplate)
+
+    for res in cursor:
+        ranking.scores[res[0] + ' (' + res[1] + ')'] = int(res[2])
+
+    cursor.execute(fetchInstitutionTemplate)
+    for res in cursor:
+        ranking.univScores[res[0]] = int(res[1])
+
+    cursor.execute(fetchStateTemplate)
+    for res in cursor:
+        ranking.stateScores[verificadorSigla(res[0])] = int(res[1])
+
+    cursor.execute(fetchSessTemplate)
+    for res in cursor:
+        ranking.sessScores[res[0]] = int(res[1])
+
+
     stateScores=''.join(['<li><mark>'+str(k)+'</mark>'+'<small>'+str(v)+'</small></li>' for k,v in sorted(ranking.stateScores.items(), key=operator.itemgetter(1), reverse=True)[0:15]])
     
     string='''
