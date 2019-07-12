@@ -383,7 +383,7 @@ def qrshow0():
             database='csbc-gamification'
         )
         cursor = db.cursor()
-        
+
     cursor.execute(fetchNameTemplate)
 
     for res in cursor:
