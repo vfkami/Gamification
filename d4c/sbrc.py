@@ -196,6 +196,7 @@ def qr(string, sess, activity):
     if (activity == "Join"):
         cursor.execute(checkRepeatedTemplate, (csv[0],))
         result = cursor.fetchall()
+        print(result)
         if (cursor.rowcount > 0):
             if (result[len(result) - 1][0] == csv[0] and result[len(result) - 1][1] == csv[1] and
                     result[len(result) - 1][2] == csv[2]):
@@ -240,23 +241,6 @@ def qr(string, sess, activity):
         cursor.execute(insertLogTemplate,
                        (csv[0], csv[1], csv[2], sess, activity, activityScore, pointsDB, datetime.datetime.now()))
         db.commit()
-
-        cursor.execute(fetchNameTemplate)
-
-        for res in cursor:
-            ranking.scores[res[0] + ' (' + res[1] + ')'] = int(res[2])
-
-        cursor.execute(fetchInstitutionTemplate)
-        for res in cursor:
-            ranking.univScores[res[0]] = int(res[1])
-
-        cursor.execute(fetchStateTemplate)
-        for res in cursor:
-            ranking.stateScores[verificadorSigla(res[0])] = int(res[1])
-
-        cursor.execute(fetchSessTemplate)
-        for res in cursor:
-            ranking.sessScores[res[0]] = int(res[1])
 
     return ('1;0')
 
