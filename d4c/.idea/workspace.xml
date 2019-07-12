@@ -3,134 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bb7c4176-5533-4385-8185-6f9e6256a685" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/sbrc.py" beforeDir="false" afterPath="$PROJECT_DIR$/sbrc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bg_game_CSBC.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bgt2.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/bgt2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/button.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/button.txt" beforeDir="false" afterPath="$PROJECT_DIR$/static/button.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/buttonJS.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/buttonJS.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/buttonjs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/static/buttonjs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/clippy.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/clippy.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/Vx.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/Vx.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/alca.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/alca.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/leaderboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/leaderboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/reset.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style4.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style4.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style5.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style5.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style53.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style53.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style6.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style6.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/timer.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/timer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/timerSched.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/timerSched.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/CTD_D01.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/CTD_D01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/CTD_D02.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/CTD_D02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/CTD_M01.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/CTD_M01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/CTD_M02.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/CTD_M02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/CoURB01.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/CoURB01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/CoURB02.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/CoURB02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/CoURB03.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/CoURB03.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/CoURB04.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/CoURB04.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/JS01.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/JS01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/LANCOMM01.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/LANCOMM01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/LANCOMM02.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/LANCOMM02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/LANCOMM03.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/LANCOMM03.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/LANCOMM04.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/LANCOMM04.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/Minicurso_1_01.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/Minicurso_1_01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/Minicurso_1_02.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/Minicurso_1_02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/Minicurso_2_01.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/Minicurso_2_01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/Minicurso_2_02.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/Minicurso_2_02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/Minicurso_3_01.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/Minicurso_3_01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/Minicurso_4_01.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/Minicurso_4_01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/Minicurso_5_01.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/Minicurso_5_01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/Minicurso_6_01.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/Minicurso_6_01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/SF_01.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/SF_01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/SF_02.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/SF_02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/SF_03.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/SF_03.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/SF_04.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/SF_04.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/ST1.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/ST1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/ST10.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/ST10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/ST11.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/ST11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/ST12.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/ST12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/ST13.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/ST13.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/ST14.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/ST14.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/ST15.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/ST15.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/ST16.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/ST16.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/ST17.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/ST17.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/ST18.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/ST18.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/ST19.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/ST19.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/ST2.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/ST2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/ST20.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/ST20.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/ST21.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/ST21.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/ST22.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/ST22.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/ST23.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/ST23.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/ST3.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/ST3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/ST4.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/ST4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/ST5.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/ST5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/ST6.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/ST6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/ST7.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/ST7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/ST8.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/ST8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/ST9.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/ST9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/TB01.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/TB01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/TG01.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/TG01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/TG02.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/TG02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/TT01.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/TT01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/WBlockchain01.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/WBlockchain01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/WBlockchain02.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/WBlockchain02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/WCGA01.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/WCGA01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/WCGA02.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/WCGA02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/WCGA03.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/WCGA03.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/WGRS01.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/WGRS01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/WGRS02.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/WGRS02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/WGRS03.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/WGRS03.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/WGRS04.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/WGRS04.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/WRNP01.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/WRNP01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/WRNP02.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/WRNP02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/WRNP03.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/WRNP03.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/WRNP04.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/WRNP04.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/WRNP05.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/WRNP05.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/WRNP06.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/WRNP06.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/WRNP07.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/WRNP07.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/WRNP08.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/WRNP08.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/WSCDC01.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/WSCDC01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/WSCDC02.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/WSCDC02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/WSCDC03.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/WSCDC03.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/WSCDC04.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/WSCDC04.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/WSlice01.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/WSlice01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/WSlice02.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/WSlice02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/WSlice03.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/WSlice03.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/WSlice04.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/WSlice04.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/WTF01.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/WTF01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/WTF03.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/WTF03.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/WTF04.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/WTF04.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/WW01.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/WW01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/event-restorative-yoga.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/event-restorative-yoga.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/event-yoga-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/event-yoga-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/event-yoga-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/event-yoga-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/events/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/events/show.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/expectopatronus.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/expectopatronus.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/game_CSBC_LOGO.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/__MACOSX/._js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/__MACOSX/js/._jquery-3.0.0.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/__MACOSX/js/._main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/__MACOSX/js/._modernizr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/__MACOSX/js/._timer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/jquery-3.0.0.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/jquery-3.0.0.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/js/jquery-3.0.0.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/js/modernizr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/js/timer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/modernizr.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/modernizr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/timer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/static/robots.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/changer.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/changer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index_copy.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/quarta.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/quarta.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/quinta.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/quinta.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/segunda.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/segunda.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sexta.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/terca.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/terca.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -143,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sbrc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="291" column="30" selection-start-line="291" selection-start-column="30" selection-end-line="291" selection-end-column="30" />
+            <state relative-caret-position="524">
+              <caret line="207" column="53" lean-forward="true" selection-start-line="207" selection-start-column="53" selection-end-line="207" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -280,7 +152,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29974000" />
+    <option name="totallyTimeSpent" value="30640000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -321,8 +193,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sbrc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="291" column="30" selection-start-line="291" selection-start-column="30" selection-end-line="291" selection-end-column="30" />
+        <state relative-caret-position="524">
+          <caret line="207" column="53" lean-forward="true" selection-start-line="207" selection-start-column="53" selection-end-line="207" selection-end-column="53" />
         </state>
       </provider>
     </entry>
