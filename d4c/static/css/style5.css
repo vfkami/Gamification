@@ -11,19 +11,21 @@ html {
   font-size: 62.5%;
 }
 
+
 h1 {
   font-size: 70px;
-  color: #2C4589;
+  color: #FFFFFF;
   white-space: nowrap;
   font-weight: bold;
   font-family: 'Open Sans', sans-serif;
   position: fixed;
-  right: 30px; 
-  bottom: 150px;
+  right: 1%;
+  bottom: 1%; /* Para baixar a data do evento */
+    
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-family: "Source Sans Pro", sans-serif;
   color: #222222;
   background-color: white;
@@ -32,6 +34,7 @@ body {
 
 p {
   color: #FFFFFF;
+  font-size: 14px;
 
 }
 
@@ -79,7 +82,9 @@ Main Components
     content: 'desktop';
   }
 }
-
+.coffe {
+    top: 15%;
+}
 .cd-schedule .timeline {
   display: none;
 }
@@ -92,7 +97,7 @@ Main Components
     left: 0;
     height: 100%;
     width: 100%;
-    padding-top: 50px;
+    padding-top: 60px;
   }
   .cd-schedule .timeline li {
     position: relative;
@@ -214,7 +219,7 @@ Main Components
     width: 100%;
   }
   .cd-schedule .events .events-group {
-    width: 15%;
+    width: 10%;
     float: left;
     border: 1px solid #EAEAEA;
     /* reset style */
@@ -241,7 +246,7 @@ Main Components
     vertical-align: middle;
     padding: 0 .5em;
     text-align: center;
-    background:#F27F4E;
+    background:#06791f;
     /* reset style */
     font-weight: normal;
     margin-bottom: 0;
@@ -277,7 +282,7 @@ Main Components
     margin-right: 0;
   }
   .cd-schedule .events .single-event a {
-    padding: 1.2em;
+    padding: 0%;
   }
   .cd-schedule .events .single-event:last-of-type {
     /* reset style */
@@ -299,7 +304,7 @@ Main Components
 
 .cd-schedule.loading .events .single-event {
   /* the class .loading is added by default to the .cd-schedule element
-	   it is removed as soon as the single events are placed in the schedule plan (using javascript) */
+     it is removed as soon as the single events are placed in the schedule plan (using javascript) */
   opacity: 0;
 }
 
@@ -329,10 +334,29 @@ Main Components
   line-height: 1.2;
   margin-bottom: .2em;
 }
-
 .cd-schedule .single-event[data-event="event-1"],
 .cd-schedule [data-event="event-1"] .header-bg {
   /* this is used to set a background color for the event and the modal window */
+  background: #06791f; /* muda a cor da linha */
+}
+
+
+
+.cd-schedule .single-event[data-event="event-2"],
+.cd-schedule [data-event="event-2"] .header-bg {
+  background: #ad84c7 /* muda a cor da linha */
+}
+
+
+
+.cd-schedule .single-event[data-event="event-3"],
+.cd-schedule [data-event="event-3"] .header-bg {
+  background: #733ca9; /* muda a cor da linha */
+}
+
+/*.cd-schedule .single-event[data-event="event-1"],
+.cd-schedule [data-event="event-1"] .header-bg {
+  /* this is used to set a background color for the event and the modal window 
   background: #fc8c31;
 }
 
@@ -341,6 +365,7 @@ Main Components
 .cd-schedule .single-event[data-event="event-2"],
 .cd-schedule [data-event="event-2"] .header-bg {
   background: #5389ff;
+  height: 4%;
 }
 
 
@@ -357,7 +382,7 @@ Main Components
   background: #5389ff;
 }
 
-
+*/
 
 .cd-schedule .event-modal {
   position: fixed;
@@ -595,8 +620,8 @@ Main Components
 @media only screen and (min-width: 800px) {
   .cd-schedule.animation-completed .event-modal .close,
   .cd-schedule.content-loaded.animation-completed .event-modal .event-info {
-    /* 	the .animation-completed class is added when the modal animation is completed
-			the .content-loaded class is added when the modal content has been loaded (using ajax) */
+    /*  the .animation-completed class is added when the modal animation is completed
+      the .content-loaded class is added when the modal content has been loaded (using ajax) */
     opacity: 1;
     -webkit-transition: opacity .2s;
     transition: opacity .2s;

@@ -11,15 +11,17 @@ html {
   font-size: 62.5%;
 }
 
+
 h1 {
   font-size: 70px;
-  color: #2C4589;
+  color: #FFFFFF;
   white-space: nowrap;
   font-weight: bold;
   font-family: 'Open Sans', sans-serif;
   position: fixed;
-  right: 30px; 
-  bottom: 150px;
+  right: 1%;
+  bottom: 1%; /* Para baixar a data do evento */
+    
 }
 
 body {
@@ -128,7 +130,7 @@ Main Components
             transform: translateY(-50%);
   }
   .cd-schedule .timeline li:nth-of-type(2n) span {
-    display: none;
+    /*display: none;*/
   }
 }
 
@@ -138,8 +140,8 @@ Main Components
 }
 
 .cd-schedule .events .events-group {
-  width:14%;
-  margin-bottom: 30px;
+  width:50%; /* dividido pelo numero de sala*/
+  margin-bottom: 50%;
   max-height: 1000px; /* GLD2*/
 }
 
@@ -214,7 +216,7 @@ Main Components
     width: 100%;
   }
   .cd-schedule .events .events-group {
-    width: 15%;
+    width: 50%;
     float: left;
     border: 1px solid #EAEAEA;
     /* reset style */
@@ -233,7 +235,7 @@ Main Components
  
     /* reset style */
     padding: 0;
-    background:#F27F4E;
+    background:#4;
   }
   .cd-schedule .events .top-info > span {
     /* vertically center inside its parent */
@@ -241,7 +243,7 @@ Main Components
     vertical-align: middle;
     padding: 0 .5em;
     text-align: center;
-    background:#F27F4E;
+    background:#044913; /* muda a cor do topo da tabela */
     /* reset style */
     font-weight: normal;
     margin-bottom: 0;
@@ -277,7 +279,7 @@ Main Components
     margin-right: 0;
   }
   .cd-schedule .events .single-event a {
-    padding: 1.2em;
+    padding: 1%; /* para ajustar o tamanho do espaçamento dos quadrados */
   }
   .cd-schedule .events .single-event:last-of-type {
     /* reset style */
@@ -333,29 +335,29 @@ Main Components
 .cd-schedule .single-event[data-event="event-1"],
 .cd-schedule [data-event="event-1"] .header-bg {
   /* this is used to set a background color for the event and the modal window */
-  background: #fc8c31;
+  background: #06791f; /* muda a cor da linha */
 }
 
 
 
 .cd-schedule .single-event[data-event="event-2"],
 .cd-schedule [data-event="event-2"] .header-bg {
-  background: #5389ff;
+  background: #ad84c7 /* muda a cor da linha */
 }
 
 
 
 .cd-schedule .single-event[data-event="event-3"],
 .cd-schedule [data-event="event-3"] .header-bg {
-  background: #fc8c31;
+  background: #733ca9; /* muda a cor da linha */
 }
 
 
 
-.cd-schedule .single-event[data-event="event-4"],
+/*.cd-schedule .single-event[data-event="event-4"],
 .cd-schedule [data-event="event-4"] .header-bg {
-  background: #5389ff;
-}
+  background: #ad84c7; /* muda a cor da linha 
+}*/
 
 
 
@@ -575,7 +577,7 @@ Main Components
 
 @media only screen and (min-width: 1000px) {
   .cd-schedule .event-modal .header .content {
-    padding: 1.2em;
+    padding: 1%;
   }
 }
 
@@ -585,6 +587,7 @@ Main Components
       -ms-transform: translateX(0);
           transform: translateX(0);
   visibility: visible;
+  border: 4px solid #056119; /*borda do evento modal*/
 }
 
 .cd-schedule.modal-is-open .event-modal .event-info > div {

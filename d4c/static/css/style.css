@@ -5,22 +5,23 @@ Primary style
 -------------------------------- */
 *, *::after, *::before {
   box-sizing: border-box;
-  font-family: commando;
 }
 
 html {
   font-size: 62.5%;
 }
 
+
 h1 {
   font-size: 70px;
-  color: #2C4589;
+  color: #FFFFFF;
   white-space: nowrap;
   font-weight: bold;
   font-family: 'Open Sans', sans-serif;
   position: fixed;
-  right: 30px; 
-  bottom: 150px;
+  right: 1%;
+  bottom: 1%; /* Para baixar a data do evento */
+    
 }
 
 body {

@@ -11,15 +11,17 @@ html {
   font-size: 62.5%;
 }
 
+
 h1 {
   font-size: 70px;
-  color: #2C4589;
+  color: #FFFFFF;
   white-space: nowrap;
   font-weight: bold;
   font-family: 'Open Sans', sans-serif;
   position: fixed;
-  right: 30px; 
-  bottom: 150px;
+  right: 1%;
+  bottom: 1%; /* Para baixar a data do evento */
+    
 }
 
 body {
@@ -128,7 +130,7 @@ Main Components
             transform: translateY(-50%);
   }
   .cd-schedule .timeline li:nth-of-type(2n) span {
-    display: none;
+    /*display: none;*/
   }
 }
 
@@ -138,9 +140,9 @@ Main Components
 }
 
 .cd-schedule .events .events-group {
-  width:14%;
-  margin-bottom: 30px;
-  max-height: 1052px; /* GLD2*/
+  width:5%; /* dividido pelo numero de sala*/
+  margin-bottom: ;
+  max-height: 1000px; /* GLD2*/
 }
 
 .cd-schedule .events .top-info {
@@ -214,7 +216,7 @@ Main Components
     width: 100%;
   }
   .cd-schedule .events .events-group {
-    width: 15%;
+    width: 8%;
     float: left;
     border: 1px solid #EAEAEA;
     /* reset style */
@@ -235,16 +237,17 @@ Main Components
     padding: 0;
     background:#F27F4E;
   }
-  .cd-schedule .events .top-info > span {
+    .cd-schedule .events .top-info > span {
     /* vertically center inside its parent */
     display: table-cell;
     vertical-align: middle;
     padding: 0 .5em;
     text-align: center;
-    background:#F27F4E;
+    background:#044913; /* muda a cor do topo da tabela */
     /* reset style */
     font-weight: normal;
     margin-bottom: 0;
+	font-size:10pt;
   }
   .cd-schedule .events .events-group > ul {
     height: 2000px;
@@ -277,7 +280,7 @@ Main Components
     margin-right: 0;
   }
   .cd-schedule .events .single-event a {
-    padding: 1.2em;
+    padding: 0%;
   }
   .cd-schedule .events .single-event:last-of-type {
     /* reset style */
@@ -337,18 +340,18 @@ Main Components
 }
 
 
-
 .cd-schedule .single-event[data-event="event-2"],
 .cd-schedule [data-event="event-2"] .header-bg {
-  background: #5389ff;
+  background: #ad84c7 /* muda a cor da linha */
 }
 
 
 
 .cd-schedule .single-event[data-event="event-3"],
 .cd-schedule [data-event="event-3"] .header-bg {
-  background: #fc8c31;
+  background: #733ca9; /* muda a cor da linha */
 }
+
 
 
 
@@ -633,31 +636,32 @@ Main Components
   visibility: visible;
 }
 
+
 .event-info {
-  margin-left: 15px;
-  
-  }
-  
-  .wb p strong {
-    font-weight: bold;
-    color: #000000;
-  }
-  
-  .wb > td strong {
-    font-weight: bold;
-    line-height: 150%;
-  }
-  
-  .event-info strong {
-    font-weight: bold;
-    color: #000000;
-  }
-  
-  .event-info b {
-    font-weight: bold;
-    color: #000000;
-  }
-  
-  .event-info p {
-    color: #000000;
-  }
+margin-left: 15px;
+
+}
+
+.wb p strong {
+  font-weight: bold;
+  color: #000000;
+}
+
+.wb > td strong {
+  font-weight: bold;
+  line-height: 150%;
+}
+
+.event-info strong {
+  font-weight: bold;
+  color: #000000;
+}
+
+.event-info b {
+  font-weight: bold;
+  color: #000000;
+}
+
+.event-info p {
+  color: #000000;
+}

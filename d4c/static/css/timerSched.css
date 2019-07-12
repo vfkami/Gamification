@@ -1,8 +1,8 @@
   
   #countdown {
     
-    position: absolute;
-    bottom: 185px;
+    position: relative;
+    bottom: 80px; /* */
     left: 50px;
     height: 40px;
     width: 40px;
@@ -17,7 +17,7 @@
     stroke-width: 2px;
     stroke: rgb(105, 197, 258);
     fill: none;
-    animation: countdown 60s linear infinite forwards;
+    animation: countdown 30s linear infinite forwards;
   }
   
   @keyframes countdown {
