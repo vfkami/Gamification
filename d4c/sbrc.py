@@ -147,10 +147,7 @@ try:
  GROUP BY INSTITUICOES.Sigla
  ORDER BY SUM(points) DESC'''
 
-    fetchNameTemplate= ''' SELECT Name,state,SUM(points)
- FROM EventLogs
- GROUP BY Name
- ORDER BY SUM(points) DESC'''
+    fetchNameTemplate= '''SELECT Name,sigla,SUM(points) FROM EventLogs LEFT OUTER JOIN INSTITUICOES ON INSTITUICOES.NomeCompleto=EventLogs.Institution GROUP BY Name ORDER BY SUM(points) DESC'''
 
 
     fetchSessTemplate= ''' SELECT session,SUM(points)
