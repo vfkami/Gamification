@@ -372,6 +372,18 @@ def favicon():
 
 @app.route('/qrshow/0')
 def qrshow0():
+    if (sql):
+        global cursor
+        global db
+        global insertLogTemplate
+        db = mysql.connector.connect(
+            host="45.55.64.56",
+            user="d63551eebd92 ",
+            passwd="ac3b4f15720d4083",
+            database='csbc-gamification'
+        )
+        cursor = db.cursor()
+        
     cursor.execute(fetchNameTemplate)
 
     for res in cursor:
