@@ -125,8 +125,7 @@ try:
         host="45.55.64.56",
         user="d63551eebd92 ",
         passwd="ac3b4f15720d4083",
-        database='csbc-gamification',
-	charset='utf8'
+        database='csbc-gamification'
     )
 
     print(db)
