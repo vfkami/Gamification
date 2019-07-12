@@ -299,7 +299,7 @@ var Dash = {
        {url: "http://gercom.ddns.net:8082/qrshow/2", time: 60, refresh: true},
        {url: "http://gercom.ddns.net:8082/qrshow/3", time: 60, refresh: true},
        {url: "http://gercom.ddns.net:8082/patrocinio", time: 60, refresh: false},
-       {url: "http://gercom.ddns.net:8082/segunda", time: 60, refresh: true}
+       {url: "http://gercom.ddns.net:8082/domingo", time: 80, refresh: true}
 
     ],
     startup: function () {
@@ -1015,9 +1015,9 @@ def showsched5():
     return render_template('quinta.html')
 
 
-@app.route('/sexta')
+@app.route('/domingo')
 def showsched6():
-    return render_template('sexta.html')
+    return render_template('domingo.html')
 
 
 @app.route('/sessions')

@@ -15,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sbrc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="194" column="28" lean-forward="true" selection-start-line="194" selection-start-column="28" selection-end-line="194" selection-end-column="28" />
+            <state relative-caret-position="514">
+              <caret line="1024" column="91" lean-forward="true" selection-start-line="1024" selection-start-column="91" selection-end-line="1024" selection-end-column="91" />
             </state>
           </provider>
         </entry>
@@ -152,7 +152,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32464000" />
+    <option name="totallyTimeSpent" value="33211000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -193,8 +193,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sbrc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="194" column="28" lean-forward="true" selection-start-line="194" selection-start-column="28" selection-end-line="194" selection-end-column="28" />
+        <state relative-caret-position="514">
+          <caret line="1024" column="91" lean-forward="true" selection-start-line="1024" selection-start-column="91" selection-end-line="1024" selection-end-column="91" />
         </state>
       </provider>
     </entry>
