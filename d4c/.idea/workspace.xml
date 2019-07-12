@@ -3,16 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bb7c4176-5533-4385-8185-6f9e6256a685" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sbrc.py" beforeDir="false" afterPath="$PROJECT_DIR$/sbrc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bgt1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bgt2.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/background2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bgt22.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/bertertgertertertt22.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bgt3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/domingo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/domingo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/quarta.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/quarta.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/quinta.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/quinta.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/segunda.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/segunda.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/terca.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/terca.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/expectopatronus.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/patrocinio.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/patrocinio.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/patrocinio.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,13 +14,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sbrc.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="623">
               <caret line="301" column="76" lean-forward="true" selection-start-line="301" selection-start-column="76" selection-end-line="301" selection-end-column="76" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/patrocinio.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="29" lean-forward="true" selection-start-column="29" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/patrocinio.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -78,21 +84,6 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/bg.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/background2.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/background.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/cabeçalho.png">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
@@ -173,6 +164,11 @@
             <path>
               <item name="d4c" type="b2602c69:ProjectViewProjectNode" />
               <item name="d4c" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="d4c" type="b2602c69:ProjectViewProjectNode" />
+              <item name="d4c" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -237,7 +233,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34795000" />
+    <option name="totallyTimeSpent" value="35021000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -354,6 +350,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="623">
           <caret line="301" column="76" lean-forward="true" selection-start-line="301" selection-start-column="76" selection-end-line="301" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/expectopatronus1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/patrocinio.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/patrocinio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" lean-forward="true" selection-start-column="29" selection-end-column="29" />
         </state>
       </provider>
     </entry>
