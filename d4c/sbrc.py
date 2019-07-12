@@ -390,9 +390,15 @@ def qrshow1():
     string = '''
         <html><head>
 		<style>
+			@font-face {
+				font-family: 'BAMBI';
+				src: url('/static/css/gillsans-extrabold.ttf');
+			}
+
 			body {
 			  color: #000000;
-			  font-family: 'Open Sans', sans-serif;
+			  font-family: 'BAMBI';
+			  font-size: 20px;
 			}
 
 			.logo{
@@ -535,9 +541,15 @@ def qrshow2():
     string = '''
         <html><head>
 		<style>
+			@font-face {
+				font-family: 'BAMBI';
+				src: url('/static/css/gillsans-extrabold.ttf');
+			}
+
 			body {
 			  color: #000000;
-			  font-family: 'Open Sans', sans-serif;
+			  font-family: 'BAMBI';
+			  font-size: 20px;
 			}
 
 			.logo{
@@ -680,9 +692,15 @@ def qrshow3():
     string = '''
         <html><head>
 		<style>
+			@font-face {
+				font-family: 'BAMBI';
+				src: url('/static/css/gillsans-extrabold.ttf');
+			}
+
 			body {
 			  color: #000000;
-			  font-family: 'Open Sans', sans-serif;
+			  font-family: 'BAMBI';
+			  font-size: 20px;
 			}
 
 			.logo{
@@ -824,9 +842,15 @@ def qrshow4():
     string = '''
         <html><head>
 		<style>
+			@font-face {
+				font-family: 'BAMBI';
+				src: url('/static/css/gillsans-extrabold.ttf');
+			}
+
 			body {
 			  color: #000000;
-			  font-family: 'Open Sans', sans-serif;
+			  font-family: 'BAMBI';
+			  font-size: 20px;
 			}
 
 			.logo{
