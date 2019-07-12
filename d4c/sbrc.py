@@ -186,6 +186,14 @@ def qr(string, sess, activity):
         global cursor
         global db
         global insertLogTemplate
+        db = mysql.connector.connect(
+            host="45.55.64.56",
+            user="d63551eebd92 ",
+            passwd="ac3b4f15720d4083",
+            database='csbc-gamification'
+        )
+        cursor = db.cursor()
+
     csv = string.split(',')
     inst = csv[1]
     id = csv[0] + ' (' + inst + ')'
