@@ -142,7 +142,7 @@ try:
  GROUP BY state
  ORDER BY SUM(points) DESC'''
 
-    fetchInstitutionTemplate = ''' SELECT INSTITUICOES.SIGLA,SUM(points)
+    fetchInstitutionTemplate = '''SELECT INSTITUICOES.SIGLA,SUM(points)
  FROM EventLogs
  LEFT OUTER JOIN INSTITUICOES ON INSTITUICOES.NomeCompleto=EventLogs.Institution
  GROUP BY INSTITUICOES.Sigla
