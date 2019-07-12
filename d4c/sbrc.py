@@ -241,6 +241,23 @@ def qr(string, sess, activity):
                        (csv[0], csv[1], csv[2], sess, activity, activityScore, pointsDB, datetime.datetime.now()))
         db.commit()
 
+        cursor.execute(fetchNameTemplate)
+
+        for res in cursor:
+            ranking.scores[res[0] + ' (' + res[1] + ')'] = int(res[2])
+
+        cursor.execute(fetchInstitutionTemplate)
+        for res in cursor:
+            ranking.univScores[res[0]] = int(res[1])
+
+        cursor.execute(fetchStateTemplate)
+        for res in cursor:
+            ranking.stateScores[verificadorSigla(res[0])] = int(res[1])
+
+        cursor.execute(fetchSessTemplate)
+        for res in cursor:
+            ranking.sessScores[res[0]] = int(res[1])
+
     return ('1;0')
 
 
