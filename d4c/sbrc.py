@@ -204,7 +204,6 @@ def qr(string, sess, activity):
     if (activity == "Join"):
         cursor.execute(checkRepeatedTemplate, (csv[0],))
         result = cursor.fetchall()
-        print(result)
         if (cursor.rowcount > 0):
             if (result[len(result) - 1][0] == csv[0] and result[len(result) - 1][1] == csv[1] and
                     result[len(result) - 1][2] == csv[2]):
