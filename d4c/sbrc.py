@@ -535,10 +535,10 @@ def qrshow1():
 		</style>
 
         </head>
-        <body style="background-image: url(/static/bg_game_CSBC.png);">
+        <body style="background-image: url(/static/bg_CSBC.png);">
         <div>
 			<div class="logo">
-				<img src="/static/game_CSBC_LOGO.png" style="  width:500px;">
+				<img src="/static/CSBC_LOGO.png" style="  width:500px;">
 			</div>
 			<div id="box"> 
 				<div id="numero"><p>Nº</p> </div>
@@ -686,10 +686,10 @@ def qrshow2():
 		</style>
 
         </head>
-        <body style="background-image: url(/static/bg_game_CSBC.png);">
+        <body style="background-image: url(/static/bg_CSBC.png);">
         <div>
 			<div class="logo">
-				<img src="/static/game_CSBC_LOGO.png" style="  width:500px;">
+				<img src="/static/CSBC_LOGO.png" style="  width:500px;">
 			</div>
 			<div id="box"> 
 				<div id="numero"><p>Nº</p> </div>
@@ -837,10 +837,10 @@ def qrshow3():
 		</style>
 
         </head>
-        <body style="background-image: url(/static/bg_game_CSBC.png);">
+        <body style="background-image: url(/static/bg_CSBC.png);">
         <div>
 			<div class="logo">
-				<img src="/static/game_CSBC_LOGO.png" style="  width:500px;">
+				<img src="/static/CSBC_LOGO.png" style="  width:500px;">
 			</div>
 			<div id="box"> 
 				<div id="numero"><p>Nº</p> </div>
@@ -987,10 +987,10 @@ def qrshow4():
 		</style>
 
         </head>
-        <body style="background-image: url(/static/bg_game_CSBC.png);">
+        <body style="background-image: url(/static/bg_CSBC.png);">
         <div>
 			<div class="logo">
-				<img src="/static/game_CSBC_LOGO.png" style="  width:500px;">
+				<img src="/static/CSBC_LOGO.png" style="  width:500px;">
 			</div>
 			<div id="box"> 
 				<div id="numero"><p>Nº</p> </div>
