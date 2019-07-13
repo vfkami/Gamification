@@ -295,10 +295,11 @@ var Dash = {
     //Don't put too many items in this list
     dashboards: [
        {url: "http://gercom.ddns.net:8082/qrshow/0", time: 1, refresh: true},
-       {url: "http://gercom.ddns.net:8082/qrshow/1", time: 60, refresh: true},
-       {url: "http://gercom.ddns.net:8082/qrshow/2", time: 60, refresh: true},
-       {url: "http://gercom.ddns.net:8082/qrshow/3", time: 60, refresh: true},
-       {url: "http://gercom.ddns.net:8082/patrocinio", time: 60, refresh: false},
+       {url: "http://gercom.ddns.net:8082/qrshow/1", time: 20, refresh: true},
+       {url: "http://gercom.ddns.net:8082/qrshow/2", time: 20, refresh: true},
+       {url: "http://gercom.ddns.net:8082/qrshow/3", time: 20, refresh: true},
+       {url: "http://gercom.ddns.net:8082/qrshow/4", time: 20, refresh: true},
+       {url: "http://gercom.ddns.net:8082/patrocinio", time: 20, refresh: false},
        {url: "http://gercom.ddns.net:8082/domingo", time: 80, refresh: true}
 
     ],
@@ -423,7 +424,7 @@ def qrshow1():
 			
 			<div class="leaderboard_header"> 
 				<div class="aux" style=" width:10%;"><p>Nº</p> </div>
-    			<div class="aux" style=" width:68.5%;"> <p>SESSÃO</p> </div>
+    			<div class="aux" style=" width:68.5%;"> <p>NOME</p> </div>
     			<div class="aux" style=" width:18.1%;"> <p>PONTUAÇÃO</p> </div>
   			</div>
 			
@@ -460,7 +461,7 @@ def qrshow2():
 			
 			<div class="leaderboard_header"> 
 				<div class="aux" style=" width:10%;"><p>Nº</p> </div>
-    			<div class="aux" style=" width:68.5%;"> <p>SESSÃO</p> </div>
+    			<div class="aux" style=" width:68.5%;"> <p>INSTITUIÇÃO</p> </div>
     			<div class="aux" style=" width:18.1%;"> <p>PONTUAÇÃO</p> </div>
   			</div>
 			
@@ -533,7 +534,7 @@ def qrshow4():
 			
 			<div class="leaderboard_header"> 
 				<div class="aux" style=" width:10%;"><p>Nº</p> </div>
-    			<div class="aux" style=" width:68.5%;"> <p>SESSÃO</p> </div>
+    			<div class="aux" style=" width:68.5%;"> <p>ESTADO</p> </div>
     			<div class="aux" style=" width:18.1%;"> <p>PONTUAÇÃO</p> </div>
   			</div>
 			
