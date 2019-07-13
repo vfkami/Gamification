@@ -13,7 +13,7 @@ html {
 
 
 h1 {
-  font-size: 70px;
+  font-size: 55px;
   color: #FFFFFF;
   white-space: nowrap;
   font-weight: bold;
@@ -71,6 +71,7 @@ Main Components
     width: 90%;
     max-width: 1400px;
     margin: 2em auto;
+    top: 30px;
   }
   .cd-schedule::after {
     clear: both;
@@ -119,7 +120,7 @@ Main Components
 
 @media only screen and (min-width: 1000px) {
   .cd-schedule .timeline li::after {
-    width: calc(100% - 60px);
+    width: 97%;
     left: 60px;
   }
   .cd-schedule .timeline li span {
@@ -302,7 +303,7 @@ Main Components
 @media only screen and (min-width: 1000px) {
   .cd-schedule .events {
     /* 60px is the .timeline element width */
-    width: calc(100% - 60px);
+    width: 98%;
     margin-left: 60px;
   }
 }

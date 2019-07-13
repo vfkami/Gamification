@@ -13,7 +13,7 @@ html {
 
 
 h1 {
-  font-size: 70px;
+  font-size: 55px;
   color: #FFFFFF;
   white-space: nowrap;
   font-weight: bold;
@@ -71,6 +71,7 @@ Main Components
     width: 90%;
     max-width: 1400px;
     margin: 2em auto;
+	top: 30px;
   }
   .cd-schedule::after {
     clear: both;
