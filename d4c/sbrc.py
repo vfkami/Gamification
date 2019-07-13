@@ -576,12 +576,12 @@ def showsched6():
 
 @app.route('/sessions')
 def sessions():
-    domingoManha = "CQEB(9-12),CQ(9-12),CQEB(14-16),CQ(14-16),CQEB(16:30-19),CQ(16:30-19)"
+    #domingo = "CQEB(9-12),CQ(9-12),CQEB(14-16),CQ(14-16),CQEB(16:30-19),CQ(16:30-19)"
     # segunda = "JAI #1(9-12),WEI(9-12),CTD(9-12),WIT(9-12),SEMISH(9-12),SEMISH-hackaton(9-12),WPerformance(9-12),WTranS(9-12),ETC(9-12),CLOUDSCAPE-Brazil(9-12),ForumPG(9-12),JAI #1(16-19),WEI(16-19),CTD(16-19),WIT(16-19),SEMISH(16-19),SEMISH-hackaton(16-19),WPerformance(16-19),WTranS(16-19),ETC(16-19),CLOUDSCAPE-Brazil(16-19),ForumPG(16-19),SECOMU"
     # terca = "JAI #2(9-12),WEI(9-12),CTD(9-12),WIT(9-12),SEMISH(9-12),SEMISH-hackaton(9-12),SBCUP(9-12),WPerformance(9-12),ETC(9-12),WORKSHOP-OnCloundNetworks(9-12),ReuniãoCEs(9-12),JAI #2_(16-19),WEI(16-19),CTIC(16-19),WIT(16-19),SEMISH(16-19),SEMISH-hackaton(16-19),SBCUP(16-19),WPerformance(16-19),ETC(16-19),Reunião CNPQ/CAPES(16-19),SECOMU"
     # quarta ="JAI #3(9-12),WEI(9-12),BraSNAM(9-12),BreSci(9-12),Reunião SR SBC(9-12),SBCUP(9-12),WCAMA(9-12),WPIETF hackathon(9-12),WPIETF(9-12),COMPUTEC(9-12),JAI #3_(16-19),WEI(16-19),BraSNAM(16-19),BreSci(16-19),IFIP/SBC(16-19),SBCUP(16-19),WCAMA(16-19),WPIETF hackathon(16-19),WPIETF(16-19),COMPUTEC(16-19),Apres. e Prem. do Selo de Inovacao da SBC,SECOMU"
     # quinta ="JAI #4(9-12),WEI(9-12),BraSNAM(9-12),BreSci(9-12),SBCUP(9-12),ENCompIP(9-12),WFIBRE(9-12),WPIETF(9-12),WASHES(9-12),COMPUTEC(9-12),JAI #4(16-19),WCAMA(16-19),BraSNAM(16-19),BreSci(16-19),SBCUP(16-19),ENCompIP(16-19),WFIBRE(16-19),WPIETF(16-19),WASHES(16-19),COMPUTEC(16-19),SECOMU"
-    session = domingo
+    #session = domingo
     return "CQEB(9-12),CQ(9-12),CQEB(14-16),CQ(14-16),CQEB(16:30-19),CQ(16:30-19)"
 
 
