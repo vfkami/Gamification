@@ -361,6 +361,7 @@ window.onload = Dash.startup;
 <iframe id="3"></iframe>
 <iframe id="4"></iframe>
 <iframe id="5"></iframe>
+<iframe id="6"></iframe>
 </body>
 </html>'''
     return string
