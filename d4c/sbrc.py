@@ -204,6 +204,7 @@ def qr(string, sess, activity):
     if (activity == "Join"):
         cursor.execute(checkRepeatedTemplate, (csv[0],))
         result = cursor.fetchall()
+        print(result)
         if (cursor.rowcount > 0):
             if (result[len(result) - 1][0] == csv[0] and result[len(result) - 1][1] == csv[1] and
                     result[len(result) - 1][2] == csv[2]):
@@ -409,147 +410,33 @@ def qrshow1():
                               sorted(ranking.scores.items(), key=operator.itemgetter(1), reverse=True)[0:15]])
 
     string = '''
-        <html><head>
-		<style>
-			@font-face {
-				font-family: 'BAMBI';
-				src: url('/static/css/gillsans-extrabold.ttf');
-			}
-
-			body {
-			  color: #000000;
-			  font-family: 'BAMBI';
-			  font-size: 20px;
-			}
-
-			.logo{
-			  height: auto;
-			  width: 100%;
-			  text-align: center;
-			}
-
-			.leaderboard {
-			  position: absolute;
-			  width: 100%;
-			  height: auto;
-			}
-
-			.leaderboard ol {
-			  counter-reset: leaderboard;
-			  margin-left: -20px;
-			}
-
-			.leaderboard ol li {
-			  position: relative;
-			  list-style:none;
-			  font-size: 14px;
-			  counter-increment: leaderboard;
-			  padding: 18px 0px 40px 0px;
-			  cursor: pointer;
-			}
-
-			.leaderboard ol li::before {
-			  content: counter(leaderboard);
-			  position: absolute;
-			  top: 0px;
-			  left: 0px;
-			  width: 10%;
-			  padding: 18px 0px 18px 0px;
-			  background: purple;
-			  color: #fff;
-			  border-radius: 15px;
-			  text-align: center;
-			}
-
-			.leaderboard ol li mark {
-			  border-radius: 15px;
-			  position: absolute;
-			  z-index: 2;
-			  top: 0;
-			  left: 11%;
-			  width: 66%;
-			  padding: 18px 0px 18px 0px;
-			  background: purple;
-			  color: #fff;
-			  text-align: center;
-			}
-
-			.leaderboard ol li small {
-			  border-radius: 15px;
-			  position: absolute;
-			  top: 0;
-			  left: 78%;
-			  width: 19%;
-			  padding: 18px 0px 18px 0px;
-			  background: green;
-			  color: #fff;
-			  text-align: center;
-			}
-
-
-			#numero{
-			  position:relative;
-			  top: 0px;
-			  left: 0px;
-			  width: 10%;
-			  height: 50px;
-			  background: darkblue;
-			  color: #fff;
-			  border-radius: 15px;
-			  text-align: center;
-			  float: left;
-			}
-
-			#nome{
-			  position:relative;
-			   margin: 0px 5px 0px 5px;
-			  top: 0px;
-			  left: 0px;
-			  width: 68%;
-			  height: 50px;
-			  background: darkblue;
-			  color: #fff;
-			  border-radius: 15px;
-			  text-align: center;
-			  float: left;
-			}
-			#pts{
-			  border-radius: 10px;
-			  position: relative;
-			  top: 0px;
-			  left: 0px;
-			  width: 20%;
-			  height: 50px;
-			  background: darkblue;
-			  color: #fff;
-			  border-radius: 15px;
-			  text-align: center;
-			  float: left;
-			}
-
-
-			#box{
-			  padding: 0px 0px 50px 20px;
-			}
-
-		</style>
-
-        </head>
-        <body style="background-image: url(/static/bg_CSBC.png);">
-        <div>
+        <html>
+		
+		<head>
+			<link href= "/static/css/NewStyle3.css" rel="stylesheet">
+		</head>
+        
+		<body style="background-image: url(/static/background.png);">
 			<div class="logo">
-				<img src="/static/CSBC_LOGO.png" style="  width:500px;">
+				<img src="/static/game_CSBC_LOGO.png" style=" width:500px;">
 			</div>
-			<div id="box"> 
-				<div id="numero"><p>Nº</p> </div>
-    			<div id="nome"> <p>NOME</p> </div>
-    			<div id="pts"> <p>PONTUAÇÃO</p> </div>
+			
+			<div class="leaderboard_header"> 
+				<div class="aux" style=" width:10%;"><p>Nº</p> </div>
+    			<div class="aux" style=" width:68.5%;"> <p>SESSÃO</p> </div>
+    			<div class="aux" style=" width:18.1%;"> <p>PONTUAÇÃO</p> </div>
   			</div>
+			
 			<div class="leaderboard">
-				<ol>''' + stringedScores + '''</ol>
+				<ol> '''+ stringedScores +''' <ol>
 			</div>
-        </div>
-		</body></html>'''
+
+			<div class="footer">
+				<img src="/static/inf.png" style=" width:200px;">
+			</div>
+			
+		</body>
+	</html>'''
 
     return (string)
 
@@ -560,147 +447,33 @@ def qrshow2():
                           sorted(ranking.univScores.items(), key=operator.itemgetter(1), reverse=True)[0:15]])
 
     string = '''
-        <html><head>
-		<style>
-			@font-face {
-				font-family: 'BAMBI';
-				src: url('/static/css/gillsans-extrabold.ttf');
-			}
-
-			body {
-			  color: #000000;
-			  font-family: 'BAMBI';
-			  font-size: 20px;
-			}
-
-			.logo{
-			  height: auto;
-			  width: 100%;
-			  text-align: center;
-			}
-
-			.leaderboard {
-			  position: absolute;
-			  width: 100%;
-			  height: auto;
-			}
-
-			.leaderboard ol {
-			  counter-reset: leaderboard;
-			  margin-left: -20px;
-			}
-
-			.leaderboard ol li {
-			  position: relative;
-			  list-style:none;
-			  font-size: 14px;
-			  counter-increment: leaderboard;
-			  padding: 18px 0px 40px 0px;
-			  cursor: pointer;
-			}
-
-			.leaderboard ol li::before {
-			  content: counter(leaderboard);
-			  position: absolute;
-			  top: 0px;
-			  left: 0px;
-			  width: 10%;
-			  padding: 18px 0px 18px 0px;
-			  background: purple;
-			  color: #fff;
-			  border-radius: 15px;
-			  text-align: center;
-			}
-
-			.leaderboard ol li mark {
-			  border-radius: 15px;
-			  position: absolute;
-			  z-index: 2;
-			  top: 0;
-			  left: 11%;
-			  width: 66%;
-			  padding: 18px 0px 18px 0px;
-			  background: purple;
-			  color: #fff;
-			  text-align: center;
-			}
-
-			.leaderboard ol li small {
-			  border-radius: 15px;
-			  position: absolute;
-			  top: 0;
-			  left: 78%;
-			  width: 19%;
-			  padding: 18px 0px 18px 0px;
-			  background: green;
-			  color: #fff;
-			  text-align: center;
-			}
-
-
-			#numero{
-			  position:relative;
-			  top: 0px;
-			  left: 0px;
-			  width: 10%;
-			  height: 50px;
-			  background: darkblue;
-			  color: #fff;
-			  border-radius: 15px;
-			  text-align: center;
-			  float: left;
-			}
-
-			#nome{
-			  position:relative;
-			   margin: 0px 5px 0px 5px;
-			  top: 0px;
-			  left: 0px;
-			  width: 68%;
-			  height: 50px;
-			  background: darkblue;
-			  color: #fff;
-			  border-radius: 15px;
-			  text-align: center;
-			  float: left;
-			}
-			#pts{
-			  border-radius: 10px;
-			  position: relative;
-			  top: 0px;
-			  left: 0px;
-			  width: 20%;
-			  height: 50px;
-			  background: darkblue;
-			  color: #fff;
-			  border-radius: 15px;
-			  text-align: center;
-			  float: left;
-			}
-
-
-			#box{
-			  padding: 0px 0px 50px 20px;
-			}
-
-		</style>
-
-        </head>
-        <body style="background-image: url(/static/bg_CSBC.png);">
-        <div>
+        <html>
+		
+		<head>
+			<link href= "/static/css/NewStyle3.css" rel="stylesheet">
+		</head>
+        
+		<body style="background-image: url(/static/background.png);">
 			<div class="logo">
-				<img src="/static/CSBC_LOGO.png" style="  width:500px;">
+				<img src="/static/game_CSBC_LOGO.png" style=" width:500px;">
 			</div>
-			<div id="box"> 
-				<div id="numero"><p>Nº</p> </div>
-    			<div id="nome"> <p>INSTITUIÇÃO</p> </div>
-    			<div id="pts"> <p>PONTUAÇÃO</p> </div>
+			
+			<div class="leaderboard_header"> 
+				<div class="aux" style=" width:10%;"><p>Nº</p> </div>
+    			<div class="aux" style=" width:68.5%;"> <p>SESSÃO</p> </div>
+    			<div class="aux" style=" width:18.1%;"> <p>PONTUAÇÃO</p> </div>
   			</div>
+			
 			<div class="leaderboard">
-				<ol>''' + univScores + '''</ol>
+				<ol> '''+ univScores +''' <ol>
 			</div>
-        </div>
-		</body></html>'''
+
+			<div class="footer">
+				<img src="/static/inf.png" style=" width:200px;">
+			</div>
+			
+		</body>
+	</html>'''
 
     return (string)
 
@@ -711,147 +484,33 @@ def qrshow3():
                           sorted(ranking.sessScores.items(), key=operator.itemgetter(1), reverse=True)[0:15]])
 
     string = '''
-        <html><head>
-		<style>
-			@font-face {
-				font-family: 'BAMBI';
-				src: url('/static/css/gillsans-extrabold.ttf');
-			}
-
-			body {
-			  color: #000000;
-			  font-family: 'BAMBI';
-			  font-size: 20px;
-			}
-
-			.logo{
-			  height: auto;
-			  width: 100%;
-			  text-align: center;
-			}
-
-			.leaderboard {
-			  position: absolute;
-			  width: 100%;
-			  height: auto;
-			}
-
-			.leaderboard ol {
-			  counter-reset: leaderboard;
-			  margin-left: -20px;
-			}
-
-			.leaderboard ol li {
-			  position: relative;
-			  list-style:none;
-			  font-size: 14px;
-			  counter-increment: leaderboard;
-			  padding: 18px 0px 40px 0px;
-			  cursor: pointer;
-			}
-
-			.leaderboard ol li::before {
-			  content: counter(leaderboard);
-			  position: absolute;
-			  top: 0px;
-			  left: 0px;
-			  width: 10%;
-			  padding: 18px 0px 18px 0px;
-			  background: purple;
-			  color: #fff;
-			  border-radius: 15px;
-			  text-align: center;
-			}
-
-			.leaderboard ol li mark {
-			  border-radius: 15px;
-			  position: absolute;
-			  z-index: 2;
-			  top: 0;
-			  left: 11%;
-			  width: 66%;
-			  padding: 18px 0px 18px 0px;
-			  background: purple;
-			  color: #fff;
-			  text-align: center;
-			}
-
-			.leaderboard ol li small {
-			  border-radius: 15px;
-			  position: absolute;
-			  top: 0;
-			  left: 78%;
-			  width: 19%;
-			  padding: 18px 0px 18px 0px;
-			  background: green;
-			  color: #fff;
-			  text-align: center;
-			}
-
-
-			#numero{
-			  position:relative;
-			  top: 0px;
-			  left: 0px;
-			  width: 10%;
-			  height: 50px;
-			  background: darkblue;
-			  color: #fff;
-			  border-radius: 15px;
-			  text-align: center;
-			  float: left;
-			}
-
-			#nome{
-			  position:relative;
-			   margin: 0px 5px 0px 5px;
-			  top: 0px;
-			  left: 0px;
-			  width: 68%;
-			  height: 50px;
-			  background: darkblue;
-			  color: #fff;
-			  border-radius: 15px;
-			  text-align: center;
-			  float: left;
-			}
-			#pts{
-			  border-radius: 10px;
-			  position: relative;
-			  top: 0px;
-			  left: 0px;
-			  width: 20%;
-			  height: 50px;
-			  background: darkblue;
-			  color: #fff;
-			  border-radius: 15px;
-			  text-align: center;
-			  float: left;
-			}
-
-
-			#box{
-			  padding: 0px 0px 50px 20px;
-			}
-
-		</style>
-
-        </head>
-        <body style="background-image: url(/static/bg_CSBC.png);">
-        <div>
+        <html>
+		
+		<head>
+			<link href= "/static/css/NewStyle3.css" rel="stylesheet">
+		</head>
+        
+		<body style="background-image: url(/static/background.png);">
 			<div class="logo">
-				<img src="/static/CSBC_LOGO.png" style="  width:500px;">
+				<img src="/static/game_CSBC_LOGO.png" style=" width:500px;">
 			</div>
-			<div id="box"> 
-				<div id="numero"><p>Nº</p> </div>
-    			<div id="nome"> <p>SESSÃO</p> </div>
-    			<div id="pts"> <p>PONTUAÇÃO</p> </div>
+			
+			<div class="leaderboard_header"> 
+				<div class="aux" style=" width:10%;"><p>Nº</p> </div>
+    			<div class="aux" style=" width:68.5%;"> <p>SESSÃO</p> </div>
+    			<div class="aux" style=" width:18.1%;"> <p>PONTUAÇÃO</p> </div>
   			</div>
+			
 			<div class="leaderboard">
-				<ol>''' + sessScores + '''</ol>
+				<ol> '''+ sessScores +''' <ol>
 			</div>
-        </div>
-		</body></html>'''
+
+			<div class="footer">
+				<img src="/static/inf.png" style=" width:200px;">
+			</div>
+			
+		</body>
+	</html>'''
     return (string)
 
 
@@ -861,147 +520,33 @@ def qrshow4():
                            sorted(ranking.stateScores.items(), key=operator.itemgetter(1), reverse=True)[0:15]])
 
     string = '''
-        <html><head>
-		<style>
-			@font-face {
-				font-family: 'BAMBI';
-				src: url('/static/css/gillsans-extrabold.ttf');
-			}
-
-			body {
-			  color: #000000;
-			  font-family: 'BAMBI';
-			  font-size: 20px;
-			}
-
-			.logo{
-			  height: auto;
-			  width: 100%;
-			  text-align: center;
-			}
-
-			.leaderboard {
-			  position: absolute;
-			  width: 100%;
-			  height: auto;
-			}
-
-			.leaderboard ol {
-			  counter-reset: leaderboard;
-			  margin-left: -20px;
-			}
-
-			.leaderboard ol li {
-			  position: relative;
-			  list-style:none;
-			  font-size: 14px;
-			  counter-increment: leaderboard;
-			  padding: 18px 0px 40px 0px;
-			  cursor: pointer;
-			}
-
-			.leaderboard ol li::before {
-			  content: counter(leaderboard);
-			  position: absolute;
-			  top: 0px;
-			  left: 0px;
-			  width: 10%;
-			  padding: 18px 0px 18px 0px;
-			  background: purple;
-			  color: #fff;
-			  border-radius: 15px;
-			  text-align: center;
-			}
-
-			.leaderboard ol li mark {
-			  border-radius: 15px;
-			  position: absolute;
-			  z-index: 2;
-			  top: 0;
-			  left: 11%;
-			  width: 66%;
-			  padding: 18px 0px 18px 0px;
-			  background: purple;
-			  color: #fff;
-			  text-align: center;
-			}
-
-			.leaderboard ol li small {
-			  border-radius: 15px;
-			  position: absolute;
-			  top: 0;
-			  left: 78%;
-			  width: 19%;
-			  padding: 18px 0px 18px 0px;
-			  background: green;
-			  color: #fff;
-			  text-align: center;
-			}
-
-
-			#numero{
-			  position:relative;
-			  top: 0px;
-			  left: 0px;
-			  width: 10%;
-			  height: 50px;
-			  background: darkblue;
-			  color: #fff;
-			  border-radius: 15px;
-			  text-align: center;
-			  float: left;
-			}
-
-			#nome{
-			  position:relative;
-			   margin: 0px 5px 0px 5px;
-			  top: 0px;
-			  left: 0px;
-			  width: 68%;
-			  height: 50px;
-			  background: darkblue;
-			  color: #fff;
-			  border-radius: 15px;
-			  text-align: center;
-			  float: left;
-			}
-			#pts{
-			  border-radius: 10px;
-			  position: relative;
-			  top: 0px;
-			  left: 0px;
-			  width: 20%;
-			  height: 50px;
-			  background: darkblue;
-			  color: #fff;
-			  border-radius: 15px;
-			  text-align: center;
-			  float: left;
-			}
-
-
-			#box{
-			  padding: 0px 0px 50px 20px;
-			}
-
-		</style>
-
-        </head>
-        <body style="background-image: url(/static/bg_CSBC.png);">
-        <div>
+        <html>
+		
+		<head>
+			<link href= "/static/css/NewStyle3.css" rel="stylesheet">
+		</head>
+        
+		<body style="background-image: url(/static/background.png);">
 			<div class="logo">
-				<img src="/static/CSBC_LOGO.png" style="  width:500px;">
+				<img src="/static/game_CSBC_LOGO.png" style=" width:500px;">
 			</div>
-			<div id="box"> 
-				<div id="numero"><p>Nº</p> </div>
-    			<div id="nome"> <p>ESTADO</p> </div>
-    			<div id="pts"> <p>PONTUAÇÃO</p> </div>
+			
+			<div class="leaderboard_header"> 
+				<div class="aux" style=" width:10%;"><p>Nº</p> </div>
+    			<div class="aux" style=" width:68.5%;"> <p>SESSÃO</p> </div>
+    			<div class="aux" style=" width:18.1%;"> <p>PONTUAÇÃO</p> </div>
   			</div>
+			
 			<div class="leaderboard">
-				<ol>''' + stateScores + '''</ol>
+				<ol> '''+ stateScores +''' <ol>
 			</div>
-        </div>
-		</body></html>'''
+
+			<div class="footer">
+				<img src="/static/inf.png" style=" width:200px;">
+			</div>
+			
+		</body>
+	</html>'''
 
     return (string)
 
