@@ -146,10 +146,9 @@ try:
 
     fetchNameTemplate = '''SELECT Name, sigla, total FROM `rank_indv`'''
 
-    fetchSessTemplate = ''' SELECT session,SUM(points)
- FROM EventLogs
- GROUP BY session
- ORDER BY SUM(points) DESC'''
+    fetchSessTemplate = '''SELECT session,SUM(points) FROM EventLogs where participation = "join" GROUP BY session ORDER BY SUM(points) DESC'''
+
+
 
     cursor.execute(fetchNameTemplate)
 
