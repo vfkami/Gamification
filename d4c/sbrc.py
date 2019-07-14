@@ -213,7 +213,6 @@ def qr(string, sess, activity):
                     timesince = datetime.datetime.now() - date_time_obj
                     minutessince = int(timesince.total_seconds() / 60)
                     pointsDB = int(result[len(result) - 1][6]) + 1
-                    print('Recente1')
                     if (minutessince < 30):
                         return ("0;" + str(minutessince))
             else:
@@ -223,7 +222,6 @@ def qr(string, sess, activity):
                     timesince = datetime.datetime.now() - date_time_obj
                     minutessince = int(timesince.total_seconds() / 60)
                     pointsDB = int(result[len(result) - 1][6]) + 1
-                    print('Recente2')
                     if (minutessince < 30):
                         return ("0;" + str(minutessince))
             # cursor.execute(insertLogTemplate, (csv[0],csv[1],csv[2],sess,0,0,0,0))
@@ -255,10 +253,6 @@ def qr(string, sess, activity):
         ranking.outs[id] = True
 
     ranking.stateScores[state] = ranking.stateScores.get(state, 0) + 1
-    print(result)
-    print(id)
-    print(inst[inst.find("(")+1:inst.find(")")])
-    print(state)
     #if (sql):
         #cursor.execute(insertLogTemplate,(id, inst, verificadorSigla(state), sess, activity, activityScore, pointsDB, datetime.datetime.now()))
         #db.commit()
