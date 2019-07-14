@@ -191,39 +191,26 @@ def qr(string, sess, activity):
         cursor = db.cursor()
 
     csv = string.split(',')
-    if (len(csv)==4):
-        state = verificadorSigla(csv[3])
-        inst = csv[2]
-    else:
-        state = verificadorSigla(csv[2])
-        inst = csv[1]
-    
+    inst = csv[1]
     id = csv[0] + ' (' + inst + ')'
+    state = verificadorSigla(csv[2])
     # if opt out or out then rewrite optout else score
 
     pointsDB = ranking.value[activity]
     if (activity == "Join"):
         cursor.execute(checkRepeatedTemplate, (csv[0],))
         result = cursor.fetchall()
+        print(result)
         if (cursor.rowcount > 0):
-            if (len(csv)==4):
-                if (result[len(result) - 1][0] == csv[0] and result[len(result) - 1][1] == csv[1] and
-                        result[len(result) - 1][2] == csv[3]):
-                    date_time_obj = datetime.datetime.strptime(result[len(result) - 1][7], '%Y-%m-%d %H:%M:%S.%f')
-                    timesince = datetime.datetime.now() - date_time_obj
-                    minutessince = int(timesince.total_seconds() / 60)
-                    pointsDB = int(result[len(result) - 1][6]) + 1
-                    if (minutessince < 30):
-                        return ("0;" + str(minutessince))
-            else:
-                if (result[len(result) - 1][0] == csv[0] and result[len(result) - 1][1] == csv[1] and
-                        result[len(result) - 1][2] == csv[2]):
-                    date_time_obj = datetime.datetime.strptime(result[len(result) - 1][7], '%Y-%m-%d %H:%M:%S.%f')
-                    timesince = datetime.datetime.now() - date_time_obj
-                    minutessince = int(timesince.total_seconds() / 60)
-                    pointsDB = int(result[len(result) - 1][6]) + 1
-                    if (minutessince < 30):
-                        return ("0;" + str(minutessince))
+            if (result[len(result) - 1][0] == csv[0] and result[len(result) - 1][1] == csv[1] and
+                    result[len(result) - 1][2] == csv[2]):
+                date_time_obj = datetime.datetime.strptime(result[len(result) - 1][7], '%Y-%m-%d %H:%M:%S.%f')
+                timesince = datetime.datetime.now() - date_time_obj
+                minutessince = int(timesince.total_seconds() / 60)
+                pointsDB = int(result[len(result) - 1][6]) + 1
+                print(minutessince)
+                if (minutessince < 30):
+                    return ("0;" + str(minutessince))
             # cursor.execute(insertLogTemplate, (csv[0],csv[1],csv[2],sess,0,0,0,0))
             # db.commit()
             # return('0')
@@ -253,8 +240,10 @@ def qr(string, sess, activity):
         ranking.outs[id] = True
 
     ranking.stateScores[state] = ranking.stateScores.get(state, 0) + 1
+
     if (sql):
-        cursor.execute(insertLogTemplate,(id, inst, verificadorSigla(state), sess, activity, activityScore, pointsDB, datetime.datetime.now()))
+        cursor.execute(insertLogTemplate,
+                       (csv[0], csv[1], csv[2], sess, activity, activityScore, pointsDB, datetime.datetime.now()))
         db.commit()
 
     return ('1;0')
@@ -308,7 +297,6 @@ var Dash = {
        {url: "http://gercom.ddns.net:8082/qrshow/4", time: 20, refresh: true},
        {url: "http://gercom.ddns.net:8082/patrocinio", time: 20, refresh: false},
        {url: "http://gercom.ddns.net:8082/domingo", time: 30, refresh: true}
-
     ],
     startup: function () {
         for (var index = 0; index < Dash.dashboards.length; index++) {
@@ -439,7 +427,6 @@ def qrshow1():
 			<div class="leaderboard">
 				<ol> '''+ stringedScores +''' <ol>
 			</div>
-
 			<div class="footer">
 				<img src="/static/inf.png" style=" width:200px;">
 			</div>
@@ -476,7 +463,6 @@ def qrshow2():
 			<div class="leaderboard">
 				<ol> '''+ univScores +''' <ol>
 			</div>
-
 			<div class="footer">
 				<img src="/static/inf.png" style=" width:200px;">
 			</div>
@@ -513,7 +499,6 @@ def qrshow3():
 			<div class="leaderboard">
 				<ol> '''+ sessScores +''' <ol>
 			</div>
-
 			<div class="footer">
 				<img src="/static/inf.png" style=" width:200px;">
 			</div>
@@ -549,7 +534,6 @@ def qrshow4():
 			<div class="leaderboard">
 				<ol> '''+ stateScores +''' <ol>
 			</div>
-
 			<div class="footer">
 				<img src="/static/inf.png" style=" width:200px;">
 			</div>
