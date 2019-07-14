@@ -253,9 +253,9 @@ def qr(string, sess, activity):
         ranking.outs[id] = True
 
     ranking.stateScores[state] = ranking.stateScores.get(state, 0) + 1
-    #if (sql):
-        #cursor.execute(insertLogTemplate,(id, inst, verificadorSigla(state), sess, activity, activityScore, pointsDB, datetime.datetime.now()))
-        #db.commit()
+    if (sql):
+        cursor.execute(insertLogTemplate,(id, inst, verificadorSigla(state), sess, activity, activityScore, pointsDB, datetime.datetime.now()))
+        db.commit()
 
     return ('1;0')
 
