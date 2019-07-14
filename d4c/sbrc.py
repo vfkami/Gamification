@@ -191,6 +191,7 @@ def qr(string, sess, activity):
         cursor = db.cursor()
 
     csv = string.replace(", ", ",").split(',')
+    print(len(csv))
     if (len(csv)==4):
         state = csv[3]
         inst = csv[2]
