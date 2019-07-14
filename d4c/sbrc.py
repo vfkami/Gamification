@@ -199,6 +199,9 @@ def qr(string, sess, activity):
     else:
         state = csv[2]
         inst = csv[1]
+    if (csv[0] == "LISANDRO GRANVILLE"):
+        state = "RS"
+        inst = "UFRGS"
     
     id = csv[0] + ' (' + inst + ')'
     # if opt out or out then rewrite optout else score
