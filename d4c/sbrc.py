@@ -208,14 +208,27 @@ def qr(string, sess, activity):
         cursor.execute(checkRepeatedTemplate, (csv[0],))
         result = cursor.fetchall()
         if (cursor.rowcount > 0):
-            if (result[len(result) - 1][0] == csv[0] and result[len(result) - 1][1] == csv[1] and
-                        result[len(result) - 1][2] == csv[3]):
-                    date_time_obj = datetime.datetime.strptime(result[len(result) - 1][7], '%Y-%m-%d %H:%M:%S.%f')
-                    timesince = datetime.datetime.now() - date_time_obj
-                    minutessince = int(timesince.total_seconds() / 60)
-                    pointsDB = int(result[len(result) - 1][6]) + 1
-                    if (minutessince < 30):
-                        return ("0;" + str(minutessince))
+            if (len(csv)==4):
+                if (result[len(result) - 1][0] == csv[0] and result[len(result) - 1][1] == inst and
+                            result[len(result) - 1][2] == state):
+                        date_time_obj = datetime.datetime.strptime(result[len(result) - 1][7], '%Y-%m-%d %H:%M:%S.%f')
+                        timesince = datetime.datetime.now() - date_time_obj
+                        minutessince = int(timesince.total_seconds() / 60)
+                        pointsDB = int(result[len(result) - 1][6]) + 1
+                        if (minutessince < 30):
+                            return ("0;" + str(minutessince))
+            # cursor.execute(insertLogTemplate, (csv[0],csv[1],csv[2],sess,0,0,0,0))
+            # db.commit()
+            # return('0')
+            else:
+                if (result[len(result) - 1][0] == csv[0] and result[len(result) - 1][1] == csv[1] and
+                            result[len(result) - 1][2] == csv[2]):
+                        date_time_obj = datetime.datetime.strptime(result[len(result) - 1][7], '%Y-%m-%d %H:%M:%S.%f')
+                        timesince = datetime.datetime.now() - date_time_obj
+                        minutessince = int(timesince.total_seconds() / 60)
+                        pointsDB = int(result[len(result) - 1][6]) + 1
+                        if (minutessince < 30):
+                            return ("0;" + str(minutessince))
             # cursor.execute(insertLogTemplate, (csv[0],csv[1],csv[2],sess,0,0,0,0))
             # db.commit()
             # return('0')
