@@ -190,27 +190,31 @@ def qr(string, sess, activity):
         )
         cursor = db.cursor()
 
-    csv = string.split(',')
-    inst = csv[1]
+    csv = string.replace(", ", ",").split(',')
+    if (len(csv)==4):
+        state = csv[3]
+        inst = csv[2]
+        inst = inst[inst.find("(")+1:inst.find(")")]
+    else:
+        state = csv[2]
+        inst = csv[1]
+    
     id = csv[0] + ' (' + inst + ')'
-    state = verificadorSigla(csv[2])
     # if opt out or out then rewrite optout else score
 
     pointsDB = ranking.value[activity]
     if (activity == "Join"):
         cursor.execute(checkRepeatedTemplate, (csv[0],))
         result = cursor.fetchall()
-        print(result)
         if (cursor.rowcount > 0):
             if (result[len(result) - 1][0] == csv[0] and result[len(result) - 1][1] == csv[1] and
-                    result[len(result) - 1][2] == csv[2]):
-                date_time_obj = datetime.datetime.strptime(result[len(result) - 1][7], '%Y-%m-%d %H:%M:%S.%f')
-                timesince = datetime.datetime.now() - date_time_obj
-                minutessince = int(timesince.total_seconds() / 60)
-                pointsDB = int(result[len(result) - 1][6]) + 1
-                print(minutessince)
-                if (minutessince < 30):
-                    return ("0;" + str(minutessince))
+                        result[len(result) - 1][2] == csv[3]):
+                    date_time_obj = datetime.datetime.strptime(result[len(result) - 1][7], '%Y-%m-%d %H:%M:%S.%f')
+                    timesince = datetime.datetime.now() - date_time_obj
+                    minutessince = int(timesince.total_seconds() / 60)
+                    pointsDB = int(result[len(result) - 1][6]) + 1
+                    if (minutessince < 30):
+                        return ("0;" + str(minutessince))
             # cursor.execute(insertLogTemplate, (csv[0],csv[1],csv[2],sess,0,0,0,0))
             # db.commit()
             # return('0')
@@ -240,10 +244,9 @@ def qr(string, sess, activity):
         ranking.outs[id] = True
 
     ranking.stateScores[state] = ranking.stateScores.get(state, 0) + 1
-
+    
     if (sql):
-        cursor.execute(insertLogTemplate,
-                       (csv[0], csv[1], csv[2], sess, activity, activityScore, pointsDB, datetime.datetime.now()))
+        cursor.execute(insertLogTemplate,(csv[0], inst, state, sess, activity, activityScore, pointsDB, datetime.datetime.now()))
         db.commit()
 
     return ('1;0')
