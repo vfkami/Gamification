@@ -153,7 +153,10 @@ try:
     cursor.execute(fetchNameTemplate)
 
     for res in cursor:
-        ranking.scores[res[0] + ' (' + res[1] + ')'] = int(res[2])
+        if res[1] is None:
+            ranking.scores[res[0] + ' (NULL)'] = int(res[2])
+        else:
+            ranking.scores[res[0] + ' (' + res[1] + ')'] = int(res[2])
 
     cursor.execute(fetchInstitutionTemplate)
     for res in cursor:
@@ -403,7 +406,10 @@ def qrshow0():
     cursor.execute(fetchNameTemplate)
 
     for res in cursor:
-        ranking.scores[res[0] + ' (' + res[1] + ')'] = int(res[2])
+        if res[1] is None:
+            ranking.scores[res[0] + ' (NULL)'] = int(res[2])
+        else:
+            ranking.scores[res[0] + ' (' + res[1] + ')'] = int(res[2])
 
     cursor.execute(fetchInstitutionTemplate)
     for res in cursor:
