@@ -603,7 +603,7 @@ def sessions():
     # quintaManha = "JAI #4(9-12),WEI(9-12),BraSNAM(9-12),BreSci(9-12),SBCUP(9-12),ENCompIP(9-12),WFIBRE(9-12),WPIETF(9-12),WASHES(9-12),COMPUTEC(9-12)"
 	# quintaTarde = "JAI #4(16-19),WCAMA(16-19),BraSNAM(16-19),BreSci(16-19),SBCUP(16-19),ENCompIP(16-19),WFIBRE(16-19),WPIETF(16-19),WASHES(16-19),COMPUTEC(16-19),SECOMU"
     # session = domingo
-    return "JAI #2(9-12),WEI(9-12),CTD(9-12),WIT(9-12),SEMISH(9-12),SEMISH-hackaton(9-12),SBCUP(9-12),WPerformance(9-12),ETC(9-12),WORKSHOP-OnCloundNetworks(9-12),ReuniãoCEs(9-12)"
+    return "JAI #2(16-19),WEI(16-19),CTIC(16-19),WIT(16-19),SEMISH(16-19),SEMISH-hackaton(16-19),SBCUP(16-19),WPerformance(16-19),ETC(16-19),Reunião CNPQ/CAPES(16-19),SECOMU"
 
 
 @app.route('/patrocinio')
