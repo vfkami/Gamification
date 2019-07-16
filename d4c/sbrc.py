@@ -550,7 +550,7 @@ def qrshow4():
 			<div class="leaderboard_header"> 
 				<div class="aux" style=" width:10%;"><p>Nº</p> </div>
     			<div class="aux" style=" width:68.5%;"> <p>ESTADO</p> </div>
-    			<div class="aux" style=" width:18.1%;"> <p>PONTUAÇÃO</p> </div>
+    			<div class="aux" style=" width:18.1%;"> <p>PARTICIPANTES</p> </div>
   			</div>
 			
 			<div class="leaderboard">
