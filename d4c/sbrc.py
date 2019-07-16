@@ -318,7 +318,7 @@ var Dash = {
        {url: "http://gercom.ddns.net:8082/qrshow/3", time: 20, refresh: true},
        {url: "http://gercom.ddns.net:8082/qrshow/4", time: 20, refresh: true},
        {url: "http://gercom.ddns.net:8082/patrocinio", time: 20, refresh: false},
-       {url: "http://gercom.ddns.net:8082/terca", time: 160, refresh: true}
+       {url: "http://gercom.ddns.net:8082/terca", time: 110, refresh: true}
     ],
     startup: function () {
         for (var index = 0; index < Dash.dashboards.length; index++) {
@@ -618,3 +618,5 @@ def showpatrocinio():
 # requests.get('10.0.0.1')
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=80)
+
+#SELECT *, SUM(points) as total FROM `EventLogs` WHERE DATE(updated_at) = '2019-07-15' GROUP BY Name order by total desc
