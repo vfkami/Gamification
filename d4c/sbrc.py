@@ -318,7 +318,7 @@ var Dash = {
        {url: "http://gercom.ddns.net:8082/qrshow/3", time: 20, refresh: true},
        {url: "http://gercom.ddns.net:8082/qrshow/4", time: 20, refresh: true},
        {url: "http://gercom.ddns.net:8082/patrocinio", time: 20, refresh: false},
-       {url: "http://gercom.ddns.net:8082/terca", time: 110, refresh: true}
+       {url: "http://gercom.ddns.net:8082/terca", time: 160, refresh: true}
     ],
     startup: function () {
         for (var index = 0; index < Dash.dashboards.length; index++) {
