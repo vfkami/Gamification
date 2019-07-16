@@ -137,10 +137,7 @@ try:
     insertLogTemplate = '''INSERT INTO EventLogs 
               (Name,Institution,state,session,participation,points,lastScore,updated_at)
               VALUES (%s, %s, %s, %s, %s, %s, %s, %s)'''
-    fetchStateTemplate = '''SELECT state,SUM(points)
-  FROM EventLogs
- GROUP BY state
- ORDER BY SUM(points) DESC'''
+    fetchStateTemplate = '''select state, count(*) from (SELECT * FROM `EventLogs` where participation = "join" GROUP by Name) res group by state order by count(*) desc'''
 
     fetchInstitutionTemplate = '''SELECT sigla, total FROM `rank_inst`'''
 
