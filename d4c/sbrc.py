@@ -614,6 +614,6 @@ def showpatrocinio():
 # app.run(host='0.0.0.0',port=80, threaded=True)
 # requests.get('10.0.0.1')
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=80)
+    app.run(host='0.0.0.0', port=8082)
 
 #SELECT *, SUM(points) as total FROM `EventLogs` WHERE DATE(updated_at) = '2019-07-15' GROUP BY Name order by total desc
