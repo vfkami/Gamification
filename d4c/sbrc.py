@@ -315,7 +315,7 @@ var Dash = {
        {url: "http://gercom.ddns.net:8082/qrshow/3", time: 20, refresh: true},
        {url: "http://gercom.ddns.net:8082/qrshow/4", time: 20, refresh: true},
        {url: "http://gercom.ddns.net:8082/patrocinio", time: 20, refresh: false},
-       {url: "http://gercom.ddns.net:8082/terca", time: 160, refresh: true}
+       {url: "http://gercom.ddns.net:8082/quarta", time: 130, refresh: true}
     ],
     startup: function () {
         for (var index = 0; index < Dash.dashboards.length; index++) {
@@ -603,7 +603,7 @@ def sessions():
     # quintaManha = "JAI #4(9-12),WEI(9-12),BraSNAM(9-12),BreSci(9-12),SBCUP(9-12),ENCompIP(9-12),WFIBRE(9-12),WPIETF(9-12),WASHES(9-12),COMPUTEC(9-12)"
 	# quintaTarde = "JAI #4(16-19),WCAMA(16-19),BraSNAM(16-19),BreSci(16-19),SBCUP(16-19),ENCompIP(16-19),WFIBRE(16-19),WPIETF(16-19),WASHES(16-19),COMPUTEC(16-19),SECOMU"
     # session = domingo
-    return "JAI #2(16-19),WEI(16-19),CTIC(16-19),WIT(16-19),SEMISH(16-19),SEMISH-hackaton(16-19),SBCUP(16-19),WPerformance(16-19),ETC(16-19),Reunião CNPQ/CAPES(16-19),SECOMU"
+    return "JAI #3(9-12),WEI(9-12),BraSNAM(9-12),BreSci(9-12),Reunião SR SBC(9-12),SBCUP(9-12),WCAMA(9-12),WPIETF hackathon(9-12),WPIETF(9-12),COMPUTEC(9-12)"
 
 
 @app.route('/patrocinio')
