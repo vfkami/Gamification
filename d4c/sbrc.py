@@ -309,13 +309,13 @@ var Dash = {
     nextIndex: 1,
     //Don't put too many items in this list
     dashboards: [
-       {url: "http://gercom.ddns.net:8082/qrshow/0", time: 1, refresh: true},
-       {url: "http://gercom.ddns.net:8082/qrshow/1", time: 20, refresh: true},
-       {url: "http://gercom.ddns.net:8082/qrshow/2", time: 20, refresh: true},
-       {url: "http://gercom.ddns.net:8082/qrshow/3", time: 20, refresh: true},
-       {url: "http://gercom.ddns.net:8082/qrshow/4", time: 20, refresh: true},
-       {url: "http://gercom.ddns.net:8082/patrocinio", time: 20, refresh: false},
-       {url: "http://gercom.ddns.net:8082/quarta", time: 130, refresh: true}
+       {url: "http://45.55.64.56/qrshow/0", time: 1, refresh: true},
+       {url: "http://45.55.64.56/qrshow/1", time: 20, refresh: true},
+       {url: "http://45.55.64.56/qrshow/2", time: 20, refresh: true},
+       {url: "http://45.55.64.56/qrshow/3", time: 20, refresh: true},
+       {url: "http://45.55.64.56/qrshow/4", time: 20, refresh: true},
+       {url: "http://45.55.64.56/patrocinio", time: 20, refresh: false},
+       {url: "http://45.55.64.56/quarta", time: 130, refresh: true}
     ],
     startup: function () {
         for (var index = 0; index < Dash.dashboards.length; index++) {
